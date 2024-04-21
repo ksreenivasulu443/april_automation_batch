@@ -46,7 +46,7 @@ print(a,b,c ,flush=False)
 #
 
 
-my_secret_value = os.environ.get('PASSWORD')
+my_secret_value = os.environ.get('MY_SECRET')
 print(my_secret_value)
 
 
