@@ -1,4 +1,4 @@
-import sys
+import os
 
 a = 10
 b = '10'
@@ -43,6 +43,11 @@ print(a,b, flush=False)
 
 print(a,b, flush=False)
 print(a,b,c ,flush=False)
+
+
+
+my_secret_value = os.environ.get('PASSWORD')
+print(my_secret_value)
 
 
 
