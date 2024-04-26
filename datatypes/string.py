@@ -8,11 +8,21 @@ print("The value of string is ", string)
 print("type of string is ", type(string))
 print("Memory of string", id(string))
 
+string = 'LINA'
+print("The value of string ", string)
+print("type of string is ", type(string))
+print("Memory of string ", id(string))
+
 string2 = "ETL"
 
 print("The value of string2 is ", string2)
 print("type of string2 is ", type(string2))
 print("Memory of string2", id(string2))
+
+string2 = "LINA"
+print("The value of string2 is ", string2)
+print("Type of string2 is ", type(string2))
+print("Memory of string2 is ", id(string2))
 
 string3 = """ETL"""
 
@@ -20,17 +30,33 @@ print("The value of string3 is ", string3)
 print("type of string3 is ", type(string3))
 print("Memory of string3", id(string3))
 
+string3 = """LINA"""
+
+print("The value of string3 is ", string3)
+print("Type of string3 is ", type(string3))
+print("Memory of string3 is", id(string3))
+
 string4 = '''ETL'''
 
 print("The value of string4 is ", string4)
 print("type of string4 is ", type(string4))
 print("Memory of string4", id(string4))
 
+string4 = '''LINA'''
+print("The value of string4 is ", string4)
+print("type of string4 is ", type(string4))
+print("Memory of string4 is", id(string4))
+
 string = " I don't care "
 
 print("The value of string is ", string)
 print("type of string is ", type(string))
 print("Memory of string", id(string))
+
+string = "etl automation batch"
+print("The value of string ", string)
+print("Type of string is ", type(string))
+print("Memory of string is ", id(string))
 
 string = ' I don"t care '
 
@@ -40,7 +66,7 @@ print("Memory of string", id(string))
 
 string = """i don't care """
 string = '''i don"t care '''
-etl_string= '''ETL in testing means an extract, transform and load process that reads data from multiple source systems,
+etl_string = '''ETL in testing means an extract, transform and load process that reads data from multiple source systems,
  transports it to a data transformation layer for further processing which includes cleaning,
 consolidating, integrating, and then loading into a target database or file'''
 
@@ -48,9 +74,16 @@ print("The value of etl_string is ", etl_string)
 print("type of etl_string is ", type(etl_string))
 print("Memory of etl_string", id(etl_string))
 
+etl_string1 = """ETL in testing means an extract, transform and load process that reads data from multiple source systems,
+ transports it to a data transformation layer for further processing which includes cleaning,
+consolidating, integrating, and then loading into a target database or file"""
+
+print("The value of etl_string1 is ",etl_string1)
+print("Type of etl_string1 is ",type(etl_string1))
+print("Memory of etl-string ",id(etl_string1))
 
 
-print("methods available in string datatype",dir(etl_string))
+print("methods available in string datatype", dir(etl_string))
 
 str7 = 'ETL Automation testing'
 print("Before capitalize str7 is ", str7)
@@ -64,51 +97,45 @@ print("After lower str7 is", str7.lower())
 print("After swapcase str7 is", str7.swapcase())
 print("After upper str7 is", str7.upper())
 
-
 txt = "ETL Testing"
 x = txt.center(100)
 print(x)
 
 str8 = 'BIG DATA TESTING 1| 4342 [472534623542 '
 print(f"count of A in {str8}", str8.count('A'))
-print(f"count of | in {str8}", str8.count('|',20,30))
+print(f"count of | in {str8}", str8.count('|', 20, 30))
 
 name = 'Sreeni'
-print(f"count of en in {name} and n ", name.count('en'),name.count('n'))
+print(f"count of en in {name} and n ", name.count('en'), name.count('n'))
 
+print("*" * 50)
 
+str = input("enter str value:")  # input, raw_input
 
+print(f"str.startswith('Auto') in {str} : ", str.startswith('Auto'))
 
+print(f"str.startswith('Auto') in {str} : ", str.startswith('auto'))
 
-print("*"*50)
-
-str = input("enter str value:") # input, raw_input
-
-print(f"str.startswith('Auto') in {str} : ",str.startswith('Auto'))
-
-print(f"str.startswith('Auto') in {str} : ",str.startswith('auto'))
-
-print("Ends with Testing ",str.endswith('Testing'))
+print("Ends with Testing ", str.endswith('Testing'))
 
 print(help(str.startswith))
 print(help(str.endswith))
 
-str ='TESTING'
-print("str.find('Test')",str.find(' Test'))
-print("str.find('i')",str.find('i'))
+str = 'TESTING'
+print("str.find('Test')", str.find(' Test'))
+print("str.find('i')", str.find('i'))
 #
-print("str.find('i',8)",str.find('i',8))
+print("str.find('i',8)", str.find('i', 8))
 
-print("str.find('i',8,12)",str.find('i',8,12))
+print("str.find('i',8,12)", str.find('i', 8, 12))
 
 name = 'Prashant'
 age = 24
 sname = 'K'
 #
 print(f"name is {name} and age is {age}")
-print("name is {first_name} and age is {person_age}".format(person_age= age,first_name=name))
-print("firstname is {} and lastname is {} and age {} ".format(name,sname,age))
-
+print("name is {first_name} and age is {person_age}".format(person_age=age, first_name=name))
+print("firstname is {} and lastname is {} and age {} ".format(name, sname, age))
 
 schema = input("enter schema:")
 table = input("enter table name:")
@@ -118,17 +145,16 @@ age = input("enter age :")
 
 query = f"""select count(1) from {schema}.{table} a inner join {schema}.{second_table} b
          on a.{key_column}=b.{key_column} where age<{age} """
-env=['test']
+env = ['test']
 print(query)
 for i in env:
     for j in table:
         #print(f"select * from {i}.{j}")
-        print("select * from {}.{}".format(i,j))
+        print("select * from {}.{}".format(i, j))
 
 str = 'ETLbatch5'
 
 print(f"str.isalnum() on {str}", str.isalnum())
-
 
 str2 = 'ETL batch 3'
 print(f"str2.isalnum() on {str2}", str2.isalnum())
@@ -150,7 +176,7 @@ print(f"str.lstrip()", str.lstrip())
 print("length of str after rstrip", len(str.rstrip()))
 
 str = '#Sre#eni#'
-print("str.strip('#')",str.strip("#"))
+print("str.strip('#')", str.strip("#"))
 str7 = 'ETL Automation'
 print(f"str7.lstrip()", str7.rstrip('Automation'))
 str8 = 'ETL Automation'
@@ -159,9 +185,9 @@ print(f"str8.lstrip()", str8.lstrip('ETL'))
 str9 = 'ETL-Bigdata-testing-automation'
 str10 = 'ETL,Bigdata,testing,automation'
 
-print('str9.split("-",2)',str9.split("-"))
-print('str10.split(",",2)',str10.split(","))
-print('type str10.split(",",2)',type(str10.split(",")))
+print('str9.split("-",2)', str9.split("-"))
+print('str10.split(",",2)', str10.split(","))
+print('type str10.split(",",2)', type(str10.split(",")))
 
 a = "MyFolder"
 b = "Demo002"
@@ -181,12 +207,11 @@ print(x)
 #
 myTuple = ["John", "Peter", "Vicky"]
 
-
-x = ",".join('sreeni','K')
+x = ",".join('sreeni', 'K')
 
 print(x)
 
-key_column = ['c1','c2','c3']
+key_column = ['c1', 'c2', 'c3']
 key_cols = ",".join(key_column)
 #
 # query = f" select {key_cols}, count(1) from table group by {key_cols} having count(1)"
