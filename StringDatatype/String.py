@@ -23,9 +23,17 @@ print(f"count of o in {var}",var.count('dp'))
 #print(f"str.startswith input value in {str2}: ",str2.startswith('team'))
 
 
+schema = input("Enter Schema name")
+table = input("Enter Table name")
+secondtable = input("Enter secondtable:")
+keycolumn = input("Enter Key column name")
 
+query = f""""select * from {schema}.{table} a inner join {schema}.{secondtable} b
+        on a.{keycolumn}=b.{keycolumn} """
 
+print(query)
 
+Print
 
 
 
