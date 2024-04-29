@@ -7,5 +7,7 @@ b = 20
 c = 0
 print("a")
 print("a","b")
+print(a,b)
+print("value of a is : ",a, "value of b is : ",b)
 
 
