@@ -192,4 +192,3 @@ key_cols = ",".join(key_column)
 # query = f" select {key_cols}, count(1) from table group by {key_cols} having count(1)"
 #
 # print(query)
-fusgfsdgfysdatgf

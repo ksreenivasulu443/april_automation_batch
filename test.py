@@ -1,58 +1,36 @@
-"""
-docs strings : helps user to understand all about this file
-int.py file is created to practise integer datatype
-version1 - created by : Sreeni on 13/02/2024
-"""
+str ='ETL AUTOMATION'
 
-count = 10
+str = 'seenu.k8@gmail.com'
+print(str[0:str.find('A')])
 
-print("The value of count is", count)
-print("Type of count is", type(count))
-print("Memory address of count is", id(count))
+print(str[0:str.find('@')])
 
-count2 = 10
+print(str[str.find('@')+1:str.rfind('.')])
+print(str[str.rfind('.')+1:])
 
-print("The value of count2 is", count2)
-print("Type of count2 is", type(count2))
-print("Memory address of count2 is", id(count2))
+print(str[0])
 
-count3 = 15
+print(str[1])
 
-print("The value of count3 is", count3)
-print("Type of count3 is", type(count3))
-print("Memory address of count3 is", id(count3))
+txt = "I could eat bananas all day"
 
-count4 = 10
+x = txt.partition("eat")
 
-print("The value of count4 is", count4)
-print("Type of count4 is", type(count4))
-print("Memory address of count4 is", id(count4))
+print(x)
 
-count5 = 15
+txt = "apple, banana, cherry"
 
-print("The value of count5 is", count5)
-print("Type of count5 is", type(count5))
-print("Memory address of count5 is", id(count5))
+x = txt.rsplit(", ")
 
-count6= -15
+print(x)
 
-print("The value of count6 is", count6)
-print("Type of count6 is", type(count6))
-print("Memory address of count6 is", id(count6))
+txt = "50"
 
-print("absolute number", count6.__abs__())
-print("add two numbers count5 and count6 number", count6.__add__(count5))
+x = txt.zfill(10)
 
-print("functions available in integer type",dir(1))
+print(x)
 
-print(help(count6.__add__))
+print("str[1:10:-1]",str[1:10:-1])
 
-f = 1e5
 
-print(type(f))
-print(f)
-
-print(count6.bit_count())
-print(count6.real())
-print(count6.__round__())
 
