@@ -1,3 +1,6 @@
+"""This module file is create to practice python slicing and
+    created by Prashant on 30/04/2024"""
+
 # start position
 
 str = 'ETL'
