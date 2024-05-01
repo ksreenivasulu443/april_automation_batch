@@ -15,3 +15,5 @@ print("tuple1[0:2]",tuple1[0:2] )
 print("methods available in tuple", dir(tuple1))
 
 print("tuple1.index(2.0)",tuple1.index(2.0))
+
+# Hello Kesav
