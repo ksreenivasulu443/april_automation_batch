@@ -30,6 +30,8 @@ print("memory of f ",id(f),id(e), end='\n',sep='-')
 print("memory of d ",id(d))
 print("memory of b ",id(b))
 
+print(a,b,c,d,e,sep='-',end='\t')
+print('Hello World')
 
 # writing output to file
 file = open('test.txt', 'a')
