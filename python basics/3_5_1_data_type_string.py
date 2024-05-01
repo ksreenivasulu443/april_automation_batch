@@ -1,7 +1,10 @@
 # 5. Str(): string is collection of characters, enclosed within single quotes or double quotes.
 '''
 * hold the Characters
-* indexing applicable
+* Insertion order is preserved
+* Duplicate allows
+* indexing applicable(Every character in the string is represented unique index, supports
+forward(start with 0) and backward(start with -1) index)
 * slicing applicable
 * Immutable (value assignments is not possible or not able to change the value)
 '''

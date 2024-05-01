@@ -1,3 +1,9 @@
+'''
+String index: fetch the specific character by using index number
+slicing : fetch the range of character by using slicing(:)
+
+'''
+
 # Ex:
 first_name = 'Ram'
 last_name = 'Kumar'
@@ -24,10 +30,15 @@ print(full_name)
 string = 'ETL'
 print('the vale of the string is', string)
 
+# index ex
 string1 = 'ETL_Automation_Testing'
 print(f'1st character of {string1} is', string1[0])
 print(f"in {string1} 1st character is {string1[0]}, 2st character is {string1[1]}, and 3rd character is {string1[2]}")
-print(f'Last character of {string1} is', string1[-1])
-print(f'Last character of {string1} is', string1[-12:-1])
+print(f'Backward Slicing character of {string1} is', string1[-1])
+
+
+# Slicing ex:
+print(f'Forward Slicing characters of {string1} is', string1[0:5])
+print(f'Backward Slicing characters of {string1} is', string1[-12:-1])
 # print(f"print 1 to 5th string from {string1} is", string1[2:5])
 # print(string1[1:15:2])
