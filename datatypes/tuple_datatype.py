@@ -16,4 +16,4 @@ print("methods available in tuple", dir(tuple1))
 
 print("tuple1.index(2.0)",tuple1.index(2.0))
 
-# Hello Kesav
+
