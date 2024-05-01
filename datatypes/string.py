@@ -1,7 +1,3 @@
-"""This module file is create to practice python string datatypes
-created by Sreeni on 04/23/2024
-"""
-
 string = 'ETL'
 
 print("The value of string is ", string)
