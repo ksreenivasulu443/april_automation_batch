@@ -6,15 +6,15 @@ str = 'ETL'
 
 print("str value is ", str)
 
-# print(f"last available in {str} is : ", str[-1])
-# print(f"last second character available in {str}  : ", str[-2])
-# print(f" last third character available in {str}  : ", str[-3])
-# #print(f" last fourth character available in {str}  : ", str[-4])
-#
-# print(f"first cha available in {str} is : ", str[0])
-# print(f" second character available in {str}  : ", str[1])
-# print(f"  third character available in {str}  : ", str[2])
-# #print(f"  third character available in {str}  : ", str[3])
+print(f"last available in {str} is : ", str[-1])
+print(f"last second character available in {str}  : ", str[-2])
+print(f" last third character available in {str}  : ", str[-3])
+#print(f" last fourth character available in {str}  : ", str[-4])
+
+print(f"first cha available in {str} is : ", str[0])
+print(f" second character available in {str}  : ", str[1])
+print(f"  third character available in {str}  : ", str[2])
+#print(f"  third character available in {str}  : ", str[3])
 
 str = 'ETL AUTOMATION'
 #A negative step value moves the slicing from right to left.
@@ -34,7 +34,7 @@ print("str[-12:-7:1]",str[-12:100:1])
 
 print("str[0:50:1]",str[0:50:1])
 
-# print("str[100]",str[100])
+print("str[100]",str[100])
 
 print("str[-12:-2:2]",str[-12:-2:2])
 
@@ -61,7 +61,3 @@ print("str[::]",str[::-1])
 str = "I don't care 5454 "
 #
 # print("str[-12:-7:-1]",str[-7:-12:-1])
-
-asghsagfsd
-fjgsdjhfsd
-gfsdjhagfasd
