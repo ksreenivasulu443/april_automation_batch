@@ -18,3 +18,6 @@ print(f'Secondary Name of {emails}:',emails[emails.find('.')+1:emails.find('@')]
 print(f'Domain name of {emails}:', emails[emails.find('@')+1:emails.rfind('.')])
 print(emails[emails.rfind('.')+1:])
 
+emails = 'Bala.Anand.Devisetty@gmail.com'
+print("emails @",emails[:emails.find('@')].split('.'))
+#print(f'Domain name of {emails}:', emails[emails.find('@')+1:emails.rfind('.')])
