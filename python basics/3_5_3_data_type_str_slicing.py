@@ -1,7 +1,7 @@
 '''
 String index: fetch the specific character by using index number
 slicing : fetch the range of character by using slicing(:)
-
+[0:n] n-1
 '''
 
 # Ex:
@@ -21,7 +21,7 @@ print(first_name)
 # print(first_name[0:2])
 # print(first_name[-2:])
 
-# concatenate
+# concatenate : concat of two or more string
 print("Concatenate")
 print(first_name + last_name)
 full_name = first_name + " " + last_name
@@ -40,5 +40,10 @@ print(f'Backward Slicing character of {string1} is', string1[-1])
 # Slicing ex:
 print(f'Forward Slicing characters of {string1} is', string1[0:5])
 print(f'Backward Slicing characters of {string1} is', string1[-12:-1])
-# print(f"print 1 to 5th string from {string1} is", string1[2:5])
-# print(string1[1:15:2])
+print(f"print 1 to 5th string from {string1} is", string1[2:5])
+
+# skip character [start index no:end index no:skip no of character]
+print(string1[1:15:2])
+
+# revers string
+print(string1[::-1])

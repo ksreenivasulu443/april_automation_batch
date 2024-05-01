@@ -60,3 +60,6 @@ print(f"count of a in {text}", text.startswith('Big'))
 print(f"count of a in {text}", text.endswith("Testing"))
 print(f"count of a in {text}", text.find("Data", 0))
 
+# revers string
+str0 = ''.join(reversed(string))
+print(str0)
