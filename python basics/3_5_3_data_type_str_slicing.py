@@ -49,3 +49,9 @@ print("Backward direction1")
 for i in string1[::-1]:
     print(i, end='')
 
+# start and ending part of string(startswith, endswith)
+print("-----start and ending part of string------")
+text = "Big Data Testing"
+print(f"Stating ward of {text} value is:", text.startswith('Big'))
+print(f"Ending ward of {text} value is:", text.endswith("Testing"))
+print(f"Find the word in {text} value is:", text.find("Data", 0))
