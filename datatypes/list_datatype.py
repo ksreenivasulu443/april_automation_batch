@@ -85,3 +85,43 @@ print(ls6)
 print("ls6 after remove", ls6)
 
 
+
+
+ls8 = [1.3, 2.5, 'Ajay', 'ravi']
+
+ls8.pop(2)
+
+# ls9 = ls8.remove('Ajay')
+# print('ls9', ls9)
+
+ls9 = ls8.copy()
+
+ls = [1,2,3]
+ls2 = [3,4,5]
+print("list addition ls, ls2", ls+ls2)
+print("list mul ls", ls*2)
+
+# + --> contact two string  and add two values
+# * --> repeat values and multiply two number
+
+fname ='Sreeni'
+lname ='kattu'
+a=10
+b=20
+print("fname+lname", fname+lname)
+print("a+b", a+b)
+print("a*b", a*b)
+print("fname*2", fname*2)
+
+t = (1,2,3)
+ls=[1,2,3]
+print("before convert",type(ls))
+print("before convert",type(t))
+ls = tuple(ls)
+print("after convert to tuple",type(ls))
+t = list(t)
+print("after convert to list",type(t))
+
+
+
+
