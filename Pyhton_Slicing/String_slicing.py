@@ -37,7 +37,7 @@ print(f"[:]the character available in {str} are :",str[:])
 print(f"[4:6] the character available in {str} is : " ,str[4:6])
 #
 #
-email = 'khushb@gmai.com'
+email = 'khush@gmail.com'
 print(f"user_name from {email} is : ",email[0:email.find('@')])
 print(f"user_name from {email} is : ",email[email.find('@'):])
 print(f"user_name from {email} is : ",email[email.find('@')+1:])
