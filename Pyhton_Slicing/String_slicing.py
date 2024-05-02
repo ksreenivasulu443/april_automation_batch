@@ -14,6 +14,7 @@ print(f"first character available in {str} is : ", str[0])
 print(f"second character available in {str} is : ", str[1])
 print(f"third character available in {str} is : ", str[2])
 print(f"first character available in {str} is : ", str[0])
+#print(f"fourth character available in {str} is : ", str[3])
 
 print(f"in {str},first character available is {str[0]},"
       f"second character available is {str[1]},"
@@ -22,24 +23,24 @@ print(f"in {str},first character available is {str[0]},"
 for i in str:
     print("value available is",i)
 
-# # End position
-# print("#start position")
-# print("-"*100)
-# str = 'ETL AUTOMTION'
-# print(f"the character available in {str} : ",str)
-# print(f"0:6 character available in {str} :",str[0:6])# end = end-1 , str [0 to 5 character]
-# print(f"0:4 character available in {str} :",str[0:4])# end = end-1 , str [0 to 3 character]
-# print(f"0:2 character available in {str} :",str[0:2])# end = end-1 , str [0 to 1 character]
-# print(f"0: character available in {str} :",str[0:])
-# print(f"5: character available in {str} ",str[5:])
-# print(f"[:]the character available in {str} are :",str[:])
-# print(f"[4:6] the character available in {str} is : " ,str[4:6])
+# End position
+print("#start position")
+print("-"*100)
+str = 'ETL AUTOMTION'
+print(f"the character available in {str} : ",str)
+print(f"0:6 character available in {str} :",str[0:6])# end = end-1 , str [0 to 5 character]
+print(f"0:4 character available in {str} :",str[0:4])# end = end-1 , str [0 to 3 character]
+print(f"0:2 character available in {str} :",str[0:2])# end = end-1 , str [0 to 1 character]
+print(f"0: character available in {str} :",str[0:])
+print(f"5: character available in {str} ",str[5:])
+print(f"[:]the character available in {str} are :",str[:])
+print(f"[4:6] the character available in {str} is : " ,str[4:6])
 #
 #
-# email = 'etldev2023@gmai.com'
-# print(f"user_name from {email} is : ",email[0:email.find('@')])
-# print(f"user_name from {email} is : ",email[email.find('@'):])
-# print(f"user_name from {email} is : ",email[email.find('@')+1:])
+email = 'khushb@gmai.com'
+print(f"user_name from {email} is : ",email[0:email.find('@')])
+print(f"user_name from {email} is : ",email[email.find('@'):])
+print(f"user_name from {email} is : ",email[email.find('@')+1:])
 #
 # str = 'ETL AUTOMATION'
 # print(f"str.find('A') is : " ,str.find('A'))
