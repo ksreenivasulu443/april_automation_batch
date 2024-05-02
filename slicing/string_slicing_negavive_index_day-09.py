@@ -1,5 +1,4 @@
-"""This module file is create to practice python slicing negative_index and
-    created by Prashant on 30/04/2024"""
+
 
 #slicing negative_index
 print("slicing_negative_index")
