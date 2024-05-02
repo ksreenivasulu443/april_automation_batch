@@ -94,18 +94,19 @@ print(f"change the lastname in fullname -10+2.5j to", n1)
 # remove - the specific item, if similar item multiple then delete the 1st item
 l = [1, 2, 3, 4, 1, 1, 2, 3, 'o', 4, 5, 6, 7, 'o']
 print("-----Remove value in List------")
-# a=l.remove(7)
+# l.remove(7)
 # print(a)
 l.remove(7)
-print("",l)
+ns1 = l
+print("remove the value 7 from the list", ns1)
 
 # revers
-print("-----Revers value in List------")
+print("-----Revers values in the List------")
 l.reverse()
 print(l)
 
 # sort
-k=[1,4,2,3,5,7,6,8,9]
+k = [1, 4, 2, 3, 5, 7, 6, 8, 9]
 print("-----sort value in List------")
 k.sort()
 print(k)

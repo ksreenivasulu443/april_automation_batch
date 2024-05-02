@@ -2,6 +2,7 @@
 #
 # 1. *Integer:*
 #    - What is the maximum and minimum value that can be represented by an integer in Python?
+
 #    - Explain the difference between int() and float() conversion functions in Python.
 # ans: The number without decimal points as int data type, The number with decimal points as float data type
 # both are immutable
