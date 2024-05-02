@@ -1,5 +1,6 @@
 """This module file is create to practice python list datatypes
 created by Sreeni on 05/01/2024 """
+import sys
 
 tuple1 = (1, 2.0, True, 1+2j, 'string')
 
@@ -17,3 +18,8 @@ print("methods available in tuple", dir(tuple1))
 print("tuple1.index(2.0)",tuple1.index(2.0))
 
 
+ls=[1,2,3,4,5]
+t=(1,2,3,4,5)
+
+print(sys.getsizeof(ls))
+print(sys.getsizeof(t))
