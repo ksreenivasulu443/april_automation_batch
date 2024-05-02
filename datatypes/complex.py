@@ -17,4 +17,9 @@ print("Memory address of e is", id(e))
 print("methods available:", dir(e))
 print(f"Imaginary value {e}", e.imag)
 print(f"real value{e}", e.real)
-
+f= 5.3 +3j
+print("The value of  f is",f)
+print("type of f is ",type(f))
+print("memory address of",id(f))
+print(f"Imaginary value {f} is ",f.imag)
+print(f"real value {f} is ",f.real)
