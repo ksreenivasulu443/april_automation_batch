@@ -42,21 +42,21 @@ print(f"user_name from {email} is : ",email[0:email.find('@')])
 print(f"user_name from {email} is : ",email[email.find('@'):])
 print(f"user_name from {email} is : ",email[email.find('@')+1:])
 #
-# str = 'ETL AUTOMATION'
-# print(f"str.find('A') is : " ,str.find('A'))
-# print("str.rfind('A') is : " ,str.rfind('A'))
+str = 'ETL AUTOMATION'
+print(f"str.find('A') is : " ,str.find('A'))
+print("str.rfind('A') is : " ,str.rfind('A'))
+
+
+# step position
+print("#step position")
+print("="*100)
 #
-#
-# # step position
-# print("#step position")
-# print("="*100)
-#
-# str = 'Khushboo Kumari'
-# print("[0:12:1] the available character in {str} are :",str[0:12:1])
-# print(f"[0:8] the available character in {str} are :",str[0:8])
-# print(f"[9:18]the last_name character available in {str} is :",str[9:18])
-# print(f"[0:8] the last_name character available in {str} is :",str[0:8])
-# print(f"fetch the character from the {str} :",str[0:9:1])
-# print(f"the character available in the {str} is :", str[2:6:2])
-# print(f"the character are in the {str} are :",str[0:17:1])
-# print(f"the thd available character in {str} is :", str[5:13:3])
+str = 'Khushboo Kumari'
+print("[0:12:1] the available character in {str} are :",str[0:12:1])
+print(f"[0:8] the available character in {str} are :",str[0:8])
+print(f"[9:18]the last_name character available in {str} is :",str[9:18])
+print(f"[0:8] the last_name character available in {str} is :",str[0:8])
+print(f"fetch the character from the {str} :",str[0:9:1])
+print(f"the character available in the {str} is :", str[2:6:2])
+print(f"the character are in the {str} are :",str[0:17:1])
+print(f"the thd available character in {str} is :", str[5:13:3])
