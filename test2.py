@@ -1,213 +1,220 @@
-# # # ls = []
-# # # print("type of ls ", type(ls))
-# # # print("id(ls)", id(ls))
+# # # # ls = []
+# # # # print("type of ls ", type(ls))
+# # # # print("id(ls)", id(ls))
+# # # #
+# # # # ls2 = list()
+# # # #
+# # # # print("type of ls2 ", type(ls2))
+# # # #
+# # # # ls.append(1)
+# # # # print(ls)
+# # # #
+# # # # ls.append([1,2])
+# # # #
+# # # # print(ls)
+# # # #
+# # # # ls.extend([1,2,3])
+# # # # print(ls)
+# # # #
+# # # # print("id(ls)", id(ls))
 # # #
-# # # ls2 = list()
+# # # import sys
 # # #
-# # # print("type of ls2 ", type(ls2))
+# # # # Create an empty list
+# # # my_list = []
 # # #
-# # # ls.append(1)
+# # # # Print the size of the list object
+# # # print("Size of empty list:", sys.getsizeof(my_list))
+# # #
+# # # # Append elements to the list
+# # # for i in range(10):
+# # #     my_list.append(i)
+# # #
+# # # # Print the size of the list object after appending elements
+# # # print("Size of list with 10 elements:", sys.getsizeof(my_list))
+# # #
+# # # # Print the length and capacity of the list
+# # # print("Length of list:", len(my_list))
+# # # print("Capacity of list:", my_list.__sizeof__())
+# # #
+# # # import sys
+# # #
+# # # # Create an empty tuple
+# # # my_tuple = ()
+# # #
+# # # # Print the size of the tuple object
+# # # print("Size of empty tuple:", sys.getsizeof(my_tuple))
+# # #
+# # # # Create a tuple with elements
+# # # my_tuple = (1, 2, 3, 4, 5,6,7,8,9,10)
+# # #
+# # # # Print the size of the tuple object with elements
+# # # print("Size of tuple with elements:", sys.getsizeof(my_tuple))
+# # #
+# # # a=10
+# # # print("Size of a with elements:", sys.getsizeof(a))
+# # #
+# # # # Print the length of the tuple
+# # # print("Length of tuple:", len(my_tuple))
+# # #
+# # # print("Capacity of my_tuple:", my_tuple.__sizeof__())
+# # #
+# # # ls2 =[1,23,3]
+# # # ls3 = ls2
+# # #
+# # # print("ls3", ls3)
+# # # print("ls2", ls2)
+# # #
+# # # ls2.append(1)
+# # #
+# # # print("ls3", ls3)
+# # # print("ls2", ls2)
+# # #
+# # # ls4 = ls2.copy()
+# # # ls4.append(5)
+# # #
+# # # print("ls3", ls2)
+# # # print("ls2", ls4)
+# # #
+# # # #ls5 = ls2.shallo
+# # #
+# # # print(ls2.index(3))
+# # #
+# # # ls2.insert(10,8)
+# # #
+# # # print("ls2", ls2)
+# # #
+# # # ls2.pop()
+# # #
+# # # print(ls2)
+# # # ls2.pop()
+# # # print(ls2)
+# # #
+# # # ls2.remove(23)
+# # # print(ls2)
+# # #
+# # # ls2.extend([1,2,3,4,4,8,19,20,212,212,45,2,3])
+# # #
+# # # print(ls2)
+# # #
+# # # ls2.reverse()
+# # #
+# # # print(ls2)
+# # #
+# # # ls2.reverse()
+# # #
+# # # ls= [1,4,2,7,4,2,8]
+# # # ls.sort(reverse=True)
+# # #
 # # # print(ls)
 # # #
-# # # ls.append([1,2])
+# # # ls.reverse()
 # # #
 # # # print(ls)
 # # #
-# # # ls.extend([1,2,3])
-# # # print(ls)
+# #
+# # # import gc
 # # #
-# # # print("id(ls)", id(ls))
+# # # a = 1002
+# # # referrers = gc.get_referrers(a)
+# # #
+# # # # print("Number of references to 'a':", len(referrers))
+# # # # print("References to 'a':")
+# # # for referrer in referrers:
+# # #     print(referrer)
 # #
-# # import sys
 # #
-# # # Create an empty list
-# # my_list = []
+# # import time
 # #
-# # # Print the size of the list object
-# # print("Size of empty list:", sys.getsizeof(my_list))
+# # # Create a list with 10 million elements
+# # my_list = list(range(10000000))
 # #
-# # # Append elements to the list
-# # for i in range(10):
-# #     my_list.append(i)
+# # # Measure the time taken to access an element by index
+# # start_time = time.time()
+# # element = my_list[5000000]
+# # end_time = time.time()
+# # print("Time taken to access an element in a list:", end_time - start_time, "seconds")
 # #
-# # # Print the size of the list object after appending elements
-# # print("Size of list with 10 elements:", sys.getsizeof(my_list))
 # #
-# # # Print the length and capacity of the list
-# # print("Length of list:", len(my_list))
-# # print("Capacity of list:", my_list.__sizeof__())
+# # import time
 # #
-# # import sys
+# # # Create a tuple with 10 million elements
+# # my_tuple = tuple(range(10000000))
 # #
-# # # Create an empty tuple
-# # my_tuple = ()
+# # # Measure the time taken to access an element by index
+# # start_time = time.time()
+# # element = my_tuple[5000000]
+# # end_time = time.time()
+# # print("Time taken to access an element in a tuple:", end_time - start_time, "seconds")
 # #
-# # # Print the size of the tuple object
-# # print("Size of empty tuple:", sys.getsizeof(my_tuple))
+# # import time
 # #
-# # # Create a tuple with elements
-# # my_tuple = (1, 2, 3, 4, 5,6,7,8,9,10)
+# # # Create a dictionary with 10 million key-value pairs
+# # my_dict = {i: i for i in range(10000000)}
 # #
-# # # Print the size of the tuple object with elements
-# # print("Size of tuple with elements:", sys.getsizeof(my_tuple))
+# # # Measure the time taken to access a value by key
+# # start_time = time.time()
+# # value = my_dict[5000000]
+# # end_time = time.time()
+# # print("Time taken to access a value in a dictionary:", end_time - start_time, "seconds")
 # #
-# # a=10
-# # print("Size of a with elements:", sys.getsizeof(a))
-# #
-# # # Print the length of the tuple
-# # print("Length of tuple:", len(my_tuple))
-# #
-# # print("Capacity of my_tuple:", my_tuple.__sizeof__())
-# #
-# # ls2 =[1,23,3]
-# # ls3 = ls2
-# #
-# # print("ls3", ls3)
-# # print("ls2", ls2)
-# #
-# # ls2.append(1)
-# #
-# # print("ls3", ls3)
-# # print("ls2", ls2)
-# #
-# # ls4 = ls2.copy()
-# # ls4.append(5)
-# #
-# # print("ls3", ls2)
-# # print("ls2", ls4)
-# #
-# # #ls5 = ls2.shallo
-# #
-# # print(ls2.index(3))
-# #
-# # ls2.insert(10,8)
-# #
-# # print("ls2", ls2)
-# #
-# # ls2.pop()
-# #
-# # print(ls2)
-# # ls2.pop()
-# # print(ls2)
-# #
-# # ls2.remove(23)
-# # print(ls2)
-# #
-# # ls2.extend([1,2,3,4,4,8,19,20,212,212,45,2,3])
-# #
-# # print(ls2)
-# #
-# # ls2.reverse()
-# #
-# # print(ls2)
-# #
-# # ls2.reverse()
-# #
-# # ls= [1,4,2,7,4,2,8]
-# # ls.sort(reverse=True)
-# #
-# # print(ls)
-# #
-# # ls.reverse()
-# #
-# # print(ls)
-# #
+# # seconds
 #
-# # import gc
+# # ls =[1,2,3,4]
+# # ls2=[1,2,3]
 # #
-# # a = 1002
-# # referrers = gc.get_referrers(a)
+# # ls3 = ls+ls2
 # #
-# # # print("Number of references to 'a':", len(referrers))
-# # # print("References to 'a':")
-# # for referrer in referrers:
-# #     print(referrer)
+# # print(ls3)
+# #
+# # ls.append(5)
+# #
+# # print(ls3)
+# #
+# # ls4 = ls*2
+# #
+# # print(ls4)
+# #
+# # print([i*i for i in range(1,10)])
 #
+# dict = {}
 #
-# import time
+# print(type(dict))
 #
-# # Create a list with 10 million elements
-# my_list = list(range(10000000))
+# dict2 = {1, 2, 3, 3}
 #
-# # Measure the time taken to access an element by index
-# start_time = time.time()
-# element = my_list[5000000]
-# end_time = time.time()
-# print("Time taken to access an element in a list:", end_time - start_time, "seconds")
+# print(type(dict2))
 #
+# print(dir(dict))
 #
-# import time
+# dict[1] = 'srreni'
+# dict[2] = 'Hari'
 #
-# # Create a tuple with 10 million elements
-# my_tuple = tuple(range(10000000))
+# print(dict)
 #
-# # Measure the time taken to access an element by index
-# start_time = time.time()
-# element = my_tuple[5000000]
-# end_time = time.time()
-# print("Time taken to access an element in a tuple:", end_time - start_time, "seconds")
+# print(dict.get(1))
+# print(dict[1])
 #
-# import time
+# print("keys", dict.keys())
 #
-# # Create a dictionary with 10 million key-value pairs
-# my_dict = {i: i for i in range(10000000)}
+# print("items", dict.items())
 #
-# # Measure the time taken to access a value by key
-# start_time = time.time()
-# value = my_dict[5000000]
-# end_time = time.time()
-# print("Time taken to access a value in a dictionary:", end_time - start_time, "seconds")
+# x = ('key1', 'key2', 'key3')
+# y = (3, 4, 5)
 #
-# seconds
+# thisdict = dict.fromkeys(x, y)
+#
+# print(thisdict)
+#
+# dict = {1: 'sreeni', 2: 'prakash'}
+#
+# print(dict)
+# dict.update({1: 'Hari', 4: 'Harekrishna'})
+# print(dict)
 
-# ls =[1,2,3,4]
-# ls2=[1,2,3]
-#
-# ls3 = ls+ls2
-#
-# print(ls3)
-#
-# ls.append(5)
-#
-# print(ls3)
-#
-# ls4 = ls*2
-#
-# print(ls4)
-#
-# print([i*i for i in range(1,10)])
+aTuple = (1, 'Jhon', 1+3j)
+print(type(aTuple[2:3]))
 
-dict = {}
 
-print(type(dict))
 
-dict2 = {1, 2, 3, 3}
-
-print(type(dict2))
-
-print(dir(dict))
-
-dict[1] = 'srreni'
-dict[2] = 'Hari'
-
-print(dict)
-
-print(dict.get(1))
-print(dict[1])
-
-print("keys", dict.keys())
-
-print("items", dict.items())
-
-x = ('key1', 'key2', 'key3')
-y = (3, 4, 5)
-
-thisdict = dict.fromkeys(x, y)
-
-print(thisdict)
-
-dict = {1: 'sreeni', 2: 'prakash'}
-
-print(dict)
-dict.update({1: 'Hari', 4: 'Harekrishna'})
-print(dict)
+print(type(range(5)))
