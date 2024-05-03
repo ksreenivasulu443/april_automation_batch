@@ -1,5 +1,5 @@
 """This module file is create to practice python set datatypes
-created by Sreeni on 05/02/2024 """
+created by Sreeni on 05/03/2024 """
 
 # Creating a set
 s = {1, 6,5,2, 3, 4, 5}
@@ -10,6 +10,7 @@ print("methods available", dir(s))
 
 # Adding elements to a set
 s.add(6)
+
 s.pop()
 
 print("my set after add", s)
@@ -19,7 +20,6 @@ s.remove(3)
 print("my set after remove", s)
 s.discard(3)
 print("my set after remove", s)
-
 
 # Set operations
 set1 = {1, 2, 3,2}
