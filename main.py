@@ -5,7 +5,7 @@ import pandas as pd
 import openpyxl
 import os
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import collect_set
+from pyspark.sql.functions import collect_set,grouping
 from pyspark.sql.types import StructType, StructField, StringType, IntegerType
 from utility.read_utility import read_file, read_db, read_snowflake
 from utility.validation_lib import count_check, duplicate_check, uniqueness_check, records_present_only_in_source, \
@@ -44,17 +44,11 @@ Out = {
 }
 run_test_case = test_cases.loc[(test_cases.execution_ind == 'Y')]
 
-# validation = (run_test_case.groupBy('source', 'source_type',
-#                                     'source_db_name', 'source_schema_path', 'source_transformation_query_path',
-#                                     'target', 'target_type', 'target_db_name','target_schema_path',
-#                                     'target_transformation_query_path',
-#                                     'key_col_list', 'null_col_list','exclude_columns',
-#                                     'unique_col_list','dq_column','expected_values','min_val','max_val').
-#               agg(collect_set('validation_Type').alias('validation_Type')))
-#
-# print (validation)
+validation = (run_test_case.groupBy('source', 'source_type',
+                                    'source_db_name', 'source_schema_path', 'source_transformation_query_path',
+                                    'target', 'target_type', 'target_db_name','target_schema_path',
+                                    'target_transformation_query_path',
+                                    'key_col_list', 'null_col_list','exclude_columns',
+                                    'unique_col_list','dq_column','expected_values','min_val','max_val').
+              agg(collect_set('validation_Type').alias('validation_Type')))
 
-validations = validation.collect()
-print("*"*50)
-print(f"Execution has started")
-print("*"*50)
