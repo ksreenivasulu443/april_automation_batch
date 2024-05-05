@@ -63,3 +63,8 @@ x.reverse()
 print(x)
 
 
+Y = tuple(B)
+
+print(dir(Y))
+
+
