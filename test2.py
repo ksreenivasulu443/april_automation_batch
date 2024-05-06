@@ -219,3 +219,38 @@
 #
 # print(type(range(5)))
 
+# a = 5
+#
+# print(a==5)
+# print(a!=5)
+# print(a>5)
+# print(a<5)
+# print(a>=5)
+# print(a<=5)
+#
+# source_count = 10
+#
+# target_count = 10
+#
+# print("source_count == target_count",source_count == target_count)
+#
+#
+#
+# if source_count>0 and target_count>0:
+#     print("Data available for validation, proceed")
+#
+# x = 10
+# y = 20
+# z = x
+#
+# print(id(x))
+# print(id(y))
+#
+# print(x is y)  # Output: False (x and y are two different lists)
+# print(x is z)  # Output: True (x and z refer to the same list)
+#
+# print(x is not y)  #
+# print(x is not z)  #
+
+
+
