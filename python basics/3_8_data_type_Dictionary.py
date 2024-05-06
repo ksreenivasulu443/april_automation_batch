@@ -41,10 +41,11 @@ print("Update value and added new key and value in d :", d)
 ds = {102: 2, 103: 1, 104: 2}
 print(ds)
 
-# Get need to pass key
+# for method Get need to pass key
 print("-------value of particular key by get method-------")
 print("Display the value of particular key by get method", d.get(1))
 
 # Pop
+print("-------Pop will delete particular key&vale-------")
 ds.pop(104)
 print("value of the Pop", ds)
