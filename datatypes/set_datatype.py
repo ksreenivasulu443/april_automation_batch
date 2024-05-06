@@ -88,3 +88,39 @@ print("methods available in fs", dir(fs))
 # print(set1)
 #
 #
+validation='count'
+print("*" * 50)
+print(f"{validation} has started")
+print("*" * 50)
+
+print("*" * 50)
+print(f"{validation} has ended")
+print("*" * 50)
+
+str ='sreeni-kattu'
+
+ls = str.split('-')
+print(ls)
+
+ls2 = list(str)
+print(type(ls2))
+print(ls2)
+
+
+a = '10'
+print("type of a",type(a))
+b = '12-'
+print("type of b",type(b))
+
+a = int(a)
+print("type of a after int convertion",type(a))
+# b= int(b)
+
+#a='10fhsafghasd'
+print("type of a",type(a))
+a=float(a)
+print("type of a after float",a,type(a))
+
+a= 10
+
+a = str(a)

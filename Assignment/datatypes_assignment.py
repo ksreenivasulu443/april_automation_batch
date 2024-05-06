@@ -27,5 +27,5 @@
 #    - Explain the difference between single quotes (''), double quotes ("") and triple quotes (''' ''') in Python.
 #    - How would you find the length of a string in Python?
 #    - What are some common string methods in Python, and how would you use them?
-#
+
 # These questions cover a range of topics related to Python's fundamental data types

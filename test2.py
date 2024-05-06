@@ -118,10 +118,10 @@
 # # # a = 1002
 # # # referrers = gc.get_referrers(a)
 # # #
-# # # # print("Number of references to 'a':", len(referrers))
-# # # # print("References to 'a':")
-# # # for referrer in referrers:
-# # #     print(referrer)
+# print("Number of references to 'a':", len(referrers))
+# print("References to 'a':")
+# for referrer in referrers:
+#     print(referrer)
 # #
 # #
 # # import time
@@ -212,9 +212,10 @@
 # dict.update({1: 'Hari', 4: 'Harekrishna'})
 # print(dict)
 
-aTuple = (1, 'Jhon', 1+3j)
-print(type(aTuple[2:3]))
+# aTuple = (1, 'Jhon', 1+3j)
+# print(type(aTuple[2:3]))
+#
+#
+#
+# print(type(range(5)))
 
-
-
-print(type(range(5)))
