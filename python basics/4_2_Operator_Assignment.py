@@ -71,3 +71,6 @@ xg = 10
 xg**= 2-2
 print("xg value after xg**= 2 is", xg)
 
+a = 1
+b = 2
+print(a+b)

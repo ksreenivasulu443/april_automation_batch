@@ -71,5 +71,5 @@ union_all = s1.union(s2)
 print("union_all set", union_all)
 
 intersection_set = s1.intersection(s2)
-print("intersection_set set", intersection_set)
+print("intersection_set set1", intersection_set)
 

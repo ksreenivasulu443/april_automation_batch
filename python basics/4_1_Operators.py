@@ -10,3 +10,7 @@ python provides the following set of operators
 
 
 """
+
+a = 1
+b = 2
+print(a+b)
