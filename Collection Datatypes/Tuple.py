@@ -18,19 +18,19 @@ print("methods available in tuple", dir(tuple1))
 print("tuple1.index(2.0)",tuple1.index(2.0))
 
 ls = [1,2,3,4,5]
-t =(1,2,3,4,5)
+t = (1,2,3,4,5)
 
 
 
-# print("list size",sys.getsizeof(ls))
-#
-#
-# print("tuple size",sys.getsizeof(t))
-#
-# # print("tuple")
-# # for i in t:
-# #     print(i, sys.getsizeof(i))
-#
+print("list size",sys.getsizeof(ls))
+
+
+print("tuple size",sys.getsizeof(t))
+
+# print("tuple")
+# for i in t:
+#     print(i, sys.getsizeof(i))
+
 # # for i in ls:
 # #     print(i, sys.getsizeof(i), sys.getrefcount(i))
 #
