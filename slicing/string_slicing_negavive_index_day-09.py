@@ -1,4 +1,5 @@
-
+"""This module file is create to practice python slicing negative_index and
+   created by Prashant on 30/04/2024"""
 
 #slicing negative_index
 print("slicing_negative_index")
@@ -51,18 +52,3 @@ print("name[0:1:1] the name[0:1:1] is :",name[0:1:1])
 print("name[2:-1:1] the name[2:-1:1] is :",name[2:-1:1])
 print("name[-1:-1:-1] the name[-1:-1:-1] is :",name[-1:-1:-1]) #get the update from trainee
 print("name[1:1:1] the name[1:1:1] is :",name[1:1:1]) #get the update from trainee
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
