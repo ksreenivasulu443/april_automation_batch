@@ -65,12 +65,17 @@ xf = 10
 xf//= 3
 print("xf value after xf//= 2 is", xf)
 
-# Methods *= : x*=y ====> x = x*y exponential
-print("------'Methods *= : x*=y ====> x = x*y'------")
+# Methods **= : x*=y ====> x = x**y exponential
+print("------'Methods **= : x*=y ====> x = x**y'------")
 xg = 10
 xg**= 2-2
 print("xg value after xg**= 2 is", xg)
 
-a = 1
-b = 2
-print(a+b)
+
+# Operator Precedence or Pemdas rule:
+
+# ()  Parenthesis
+# **  exponential operator
+# *,/,%,//  multiplication,division,modulo,floor division
+# +,-  addition,subtraction
+
