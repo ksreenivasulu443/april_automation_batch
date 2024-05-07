@@ -1,11 +1,11 @@
 """ This file is created to practice python print function
     created by: Sreeni on 04/19/2024
 """
-#Import section
+# Import section
 import sys
 import time
 
-#Variable creation
+# Variable creation
 a = 10
 b = '10'
 c = 'sreeni'
