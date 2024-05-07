@@ -1,3 +1,4 @@
+
 # # # # ls = []
 # # # # print("type of ls ", type(ls))
 # # # # print("id(ls)", id(ls))
@@ -217,7 +218,32 @@
 #
 #
 #
-# print(type(range(5)))
+# print(type(range(5))
+
+
+
+# cott/tiger@host.docker.internal:1521/freepdb1
+
+#
+# import cx_Oracle
+#
+# # Create a table in Oracle database
+# try:
+#
+#     con = cx_Oracle.connect('scott/tiger@localhost')
+#     print(con.version)
+#
+#     # Now execute the sqlquery
+#     cursor = con.cursor()
+#
+#     # Creating a table employee
+#     cursor.execute(
+#         "create table employee(empid integer primary key, name varchar2(30), salary number(10, 2))")
+#
+#     print("Table Created successfully")
+#
+# except:
+#     print("There is a problem with Oracle")
 
 # a = 5
 #
