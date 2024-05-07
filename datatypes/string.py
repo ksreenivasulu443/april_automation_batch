@@ -1,28 +1,28 @@
 """This module file is create to practice python string datatypes
 created by Sreeni on 04/23/2024
 """
+# string = 'ETL'
 
-string = 'ETL'
 
-print("The value of string is ", string)
-print("type of string is ", type(string))
-print("Memory of string", id(string))
+# print("The value of string is ", string)
+# print("type of string is ", type(string))
+# print("Memory of string", id(string))
 
-string = 'LINA'
-print("The value of string ", string)
-print("type of string is ", type(string))
-print("Memory of string ", id(string))
+# string = 'LINA'
+# print("The value of string ", string)
+# print("type of string is ", type(string))
+# print("Memory of string ", id(string))
 
-string2 = "ETL"
+#string2 = "ETL"
 
-print("The value of string2 is ", string2)
-print("type of string2 is ", type(string2))
-print("Memory of string2", id(string2))
+# print("The value of string2 is ", string2)
+# print("type of string2 is ", type(string2))
+# print("Memory of string2", id(string2))
 
-string2 = "LINA"
-print("The value of string2 is ", string2)
-print("Type of string2 is ", type(string2))
-print("Memory of string2 is ", id(string2))
+# string2 = "LINA"
+# print("The value of string2 is ", string2)
+# print("Type of string2 is ", type(string2))
+# print("Memory of string2 is ", id(string2))
 
 string3 = """ETL"""
 
@@ -78,10 +78,9 @@ etl_string1 = """ETL in testing means an extract, transform and load process tha
  transports it to a data transformation layer for further processing which includes cleaning,
 consolidating, integrating, and then loading into a target database or file"""
 
-print("The value of etl_string1 is ",etl_string1)
-print("Type of etl_string1 is ",type(etl_string1))
-print("Memory of etl-string ",id(etl_string1))
-
+print("The value of etl_string1 is ", etl_string1)
+print("Type of etl_string1 is ", type(etl_string1))
+print("Memory of etl-string ", id(etl_string1))
 
 print("methods available in string datatype", dir(etl_string))
 
@@ -97,13 +96,30 @@ print("After lower str7 is", str7.lower())
 print("After swapcase str7 is", str7.swapcase())
 print("After upper str7 is", str7.upper())
 
+str1 = 'ETL Automation in Python'
+print("Before capitalize str1 is ", str1)
+print("After capitalize str1 is ", str1.capitalize())
+print("After title str1 is ", str1.title())
+
+str2 = 'ETL Tester in automation'
+print("Before capitalize str2 is '", str2)
+print("After capitalize str2 is ", str2.capitalize())
+print("Afetr title str is ",str2.title())
+
+
 txt = "ETL Testing"
 x = txt.center(100)
+print(x)
+
+txt1 ="Lina Dhage"
+x= txt1.center(100)
 print(x)
 
 str8 = 'BIG DATA TESTING 1| 4342 [472534623542 '
 print(f"count of A in {str8}", str8.count('A'))
 print(f"count of | in {str8}", str8.count('|', 20, 30))
+print(f"count of T in {str8}", str8.count('T'))
+print(f"count of T in {str8}",str8.count('T',1,10))
 
 name = 'Sreeni'
 print(f"count of en in {name} and n ", name.count('en'), name.count('n'))
