@@ -1,11 +1,30 @@
 Python fundamental data types:
 
 1. *Integer:*
-   - What is the maximum and minimum value that can be represented by an integer in Python?
-   - Explain the difference between int() and float() conversion functions in Python.
-   - How do you convert a string containing a numerical value to an integer?
-   - Can you explain the concept of integer division and how it differs from regular division?
-   - How would you check if a given number is even or odd in Python?
+A. What is the maximum and minimum value that can be represented by an integer in Python?
+ANS:In Python 3, the int type corresponds to long in Python 2, and it has no maximum or minimum limit.
+The concept of a maximum or minimum int disappears completely
+
+B.Explain the difference between int() and float() conversion functions in Python.
+ANS:The int() function is used to convert any data type to an integer.
+num_str = "42"
+num_int = int(num_str)  # Converts the string "42" to an integer 42
+The float() function converts any data type to a floating-point number (i.e., a decimal number).
+num_int = 100
+num_float = float(num_int)  # Converts the integer 100 to a float 100.0
+
+C.How do you convert a string containing a numerical value to an integer?
+ANS:To convert a string containing a numerical value to an integer in Python,
+We can use the built-in int() function.
+
+D.Can you explain the concept of integer division and how it differs from regular division?
+ANS: In Python, the division operator / performs regular division,
+while // performs integer division (floor division).
+In Python 3.x:
+5 / 2 will return 2.5.
+5 // 2 will return 2.
+
+E.How would you check if a given number is even or odd in Python?
 
 2. *Float:*
    - What is the difference between float and integer division in Python?
