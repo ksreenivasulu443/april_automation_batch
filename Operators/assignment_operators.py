@@ -178,7 +178,9 @@ print("floor_division of q,r =",q/r)
 # print("the value of v is :",v)
 # v %= 3
 # print("after the Modulus of value is v=v%2 =",v)
-#
+
+
+"""this is arithmetic operation PEDMAS rule"""
 
 
 
