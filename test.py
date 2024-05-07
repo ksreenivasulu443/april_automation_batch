@@ -1,7 +1,8 @@
 """
 docs strings : helps user to understand all about this file
 int.py file is created to practise integer datatype
-version1 - created by : Sreeni on 13/02/2024
+
+version1 - created by : khushboo on 13/02/2024
 """
 
 count = 10

@@ -1,5 +1,5 @@
 """this file is created to practice python assignment opearators
-Created by Sreeni on 06/05/2024"""
+Created by khushboo on 06/05/2024"""
 
 a = 10
 print("a value is ", a)
