@@ -278,5 +278,10 @@
 # print(x is not y)  #
 # print(x is not z)  #
 
+x = 10
+
+if 10:
+    print("x is positive")
+
 
 
