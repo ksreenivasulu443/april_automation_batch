@@ -23,3 +23,6 @@ print("split str is", str.split(' '))
 
 # for i in str.split(','):
 #     print(i)
+
+str ='sreeni'
+print(['sreeni'].split())
