@@ -86,3 +86,45 @@ for k in range(hill_side):
 
 
 # print Pattern * in revers Hill
+revers_hill = int(input("Please Enter any Side of a revers pyramid  : "))
+print("revers pyramid * Pattern")
+
+# iterating number of rows
+for k in range(revers_hill):
+
+    # iterating number of column
+    for l in range(k+1):
+        print(' ', end=' ')
+    for l in range(k, revers_hill-1):
+        print('*', end=" ")
+    for l in range(k, revers_hill):
+        print('*', end=" ")
+    print()
+
+# print Pattern * in dimond
+revers_hill = int(input("Please Enter any Side of a dimond  : "))
+print("dimond * Pattern")
+ # iterating number of rows
+for k in range(hill_side-1):
+    # iterating number of column
+    for l in range(k, hill_side):
+        print(' ', end=" ")
+
+    for l in range(k):
+        print('*', end=' ')
+
+    for l in range(k+1):
+        print('*', end=' ')
+    print()
+
+# iterating number of rows
+for k in range(revers_hill):
+
+    # iterating number of column
+    for l in range(k+1):
+        print(' ', end=' ')
+    for l in range(k, revers_hill-1):
+        print('*', end=" ")
+    for l in range(k, revers_hill):
+        print('*', end=" ")
+    print()
