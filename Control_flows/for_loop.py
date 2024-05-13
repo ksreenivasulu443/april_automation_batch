@@ -45,38 +45,38 @@ for i, j in dict.items():
 
 # ls = [1, 2, 3]  # ==> [1,4,9,16]
 #
-# print("list beore square", ls)
-# ls[0] = ls[0] * ls[0]
-# ls[1] = ls[1] * ls[1]
-# ls[2] = ls[2] * ls[2]
-#
-# print("list after square", ls)
-#
-# ls2 = [4, 5, 6, 7, 8, 9, 10]
-# print("list before square", ls2)
-# ls3 = []
-# for i in ls2:
-#     print(f"{i}*{i}", i * i)
-#     ls3.append(i * i)
-#
-# print("list before square", ls3)
-#
-# ls3 = [1, 2, 3, 4, 5, 6, 8]
-# # print if number is even number
-#
-# ls_odd =[]
-# ls_even=[]
-# for i in ls3:
-#     if i % 2 == 0:# 1%2 ==0
-#         print(f"{i} is even number")
-#         ls_even.append(i)
-#     else:
-#         print(f"{i} is odd number")
-#         ls_odd.append(i)
+print("list beore square", ls)
+ls[0] = ls[0] * ls[0]
+ls[1] = ls[1] * ls[1]
+ls[2] = ls[2] * ls[2]
+
+print("list after square", ls)
+
+ls2 = [4, 5, 6, 7, 8, 9, 10]
+print("list before square", ls2)
+ls3 = []
+for i in ls2:
+    print(f"{i}*{i}", i * i)
+    ls3.append(i * i)
+
+print("list before square", ls3)
+
+ls3 = [1, 2, 3, 4, 5, 6, 8]
+# print if number is even number
+
+ls_odd =[]
+ls_even=[]
+for i in ls3:
+    if i % 2 == 0:# 1%2 ==0
+        print(f"{i} is even number")
+        ls_even.append(i)
+    else:
+        print(f"{i} is odd number")
+        ls_odd.append(i)
 
 
-# print("ls_odd", ls_odd)
-# print("ls_even", ls_even)
+print("ls_odd", ls_odd)
+print("ls_even", ls_even)
 
 age = (10,24,17,35,90,76)
 
