@@ -35,9 +35,28 @@
 #     for j in range(1,11):
 #         s=i*j
 #         print(f'{i} * {j}=', s)
-number=int(input('enter number'))
-fact=1
-for i in range(1,number+1):
-     fact=fact*i
 
-print(f'factorial of {number}',fact)
+#Factorial of N
+# number=int(input('enter number'))
+# fact=1
+# for i in range(1,number+1):
+#      fact=fact*i
+#
+# print(f'factorial of {number}',fact)
+
+#print * in Triangle
+
+# for i in range(10):
+#      print('*'*i)
+
+# n=int(input('enter number'))
+# for i in range(1,n+1):
+#      for j in range(1,n+1):
+#           print(i,end='  ')
+#      print(i, end='\n')
+# 1 2 3 4 ...
+n=int(input('enter number'))
+for i in range(1,n+1):
+     for j in range(1,n+1):
+          print(j,end='  ')
+     print(i, end='\n')
