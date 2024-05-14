@@ -45,3 +45,11 @@ for i in range(1, num4+1):
     fact =fact * i
 print(f"factorial of {num4}", fact)
 
+
+# pattern
+num5 = int(input("Enter the range end number:"))
+
+for i in range(1, num5+1):
+    for j in range(1, num5+1):
+        print(i, end=" ")
+    print()
