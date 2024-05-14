@@ -9,8 +9,7 @@
 # for i in  range(10):
 #     print(f'number from range 10',i)
 #
-
-# num=int(input('enter number'))
+#num=int(input('enter number'))
 # sum=0
 # for i in range(1,num+1):
 #     #print(i)
@@ -20,12 +19,7 @@
 #
 # print('sum of all the given numbers',sum)
 
-#print sum of oodd numbers in a given range
 
-# for i in range(1,num+1):
-#     if num % 2 !=0:
-#         sum=sum+i
-#         print('sum of odd number',sum)
 # print the tables for specified number
 # for i in range(1,11):
 #     s=num*i
@@ -54,9 +48,18 @@
 #      for j in range(1,n+1):
 #           print(i,end='  ')
 #      print(i, end='\n')
-# 1 2 3 4 ...
-n=int(input('enter number'))
-for i in range(1,n+1):
-     for j in range(1,n+1):
-          print(j,end='  ')
-     print(i, end='\n')
+# # 1 2 3 4 ...
+# n=int(input('enter number'))
+# for i in range(1,n+1):
+#      for j in range(1,n+1):
+#           print(j,end='  ')
+#      print(i, end='\n')
+
+#print sum of oodd numbers in a given range
+num=int(input('enter number'))
+sum=0
+for i in range(1,num+1):
+     if i % 2 !=0:
+          #print(i)
+          sum=sum+i
+print('sum of odd numbers',sum)
