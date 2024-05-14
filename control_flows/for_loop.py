@@ -149,7 +149,7 @@
 # sum2 = num*(num+1)/2
 # print(sum2)
 
-#Python program to calculate the sum of all the odd numbers within the given range.
+# Python program to calculate the sum of all the odd numbers within the given range.
 
 # 2*1 = 2
 # 2*2 = 4
@@ -179,11 +179,21 @@
 #
 # print(f"factorial of 7*6*5*4*3*2*1", fact)
 
-for i in range(1,11):
-    #print("i value is ", i)
-    for j in range(1,11):
-        #print("j value is ", j)
-        print(f"{i}*{j} = {i*j}")
 
+# for i in range(1, 50):
+#     for j in range(1, 11):
+#         #print(" i and j value is ", i,j )
+#         print(f"{i}*{j} = {i * j}")
 
+# for i in range(1,6):
+#     print("#"*i)
 
+n=int(input("Enter the number of rows: "))
+for i in range(1,n+1):
+    for j in range(1,n+1):
+        #print("j value",j)
+        print(i,end=' ')
+    print(end='\n')
+
+print("word1", end='\t')
+print("word2")
