@@ -46,7 +46,7 @@ def Calc5(a,b):
 sum,sub,mul,div,sal,name=Calc5(10,20)
 #print(result)
 print(sum)
-print(sub)
+print(sub) 
 print(mul)
 print(div)
 print(sal)
