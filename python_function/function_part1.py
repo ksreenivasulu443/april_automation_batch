@@ -49,13 +49,13 @@ def calc2(a, b, c):
 def calc3(a,b):
     print("a value is ", a)
     print("b value is ",b )
-    # print(f"sum of two numbers", a+b)
-    # print(f"sub of two number", a-b)
-    # print(f"mul of two number", a*b)
-    # print(f"div of two number", a / b)
+    print(f"sum of two numbers", a+b)
+    print(f"sub of two number", a-b)
+    print(f"mul of two number", a*b)
+    print(f"div of two number", a / b)
     return a+b, a-b, a*b, a/b,1000,'sreeni'
 
-
+print(calc3(10,20))
 sub, sum,mul, div, sal, name = calc3(10,20)
 
 print("sum", sum)
@@ -64,6 +64,8 @@ print("mul", mul)
 print("div", div)
 print("sal", sal)
 print("name", name)
+
+calc3(10)
 
 
 
