@@ -125,21 +125,90 @@
 # calc(10,30)
 
 
-# Global variable
-global_var = "I'm a global variable"
+# # Global variable
+# global_var = "I'm a global variable"
+#
+# def outer_function():
+#     outer_var = "I'm an outer variable"
+#
+#     def inner_function():
+#         inner_var = "I'm an inner variable"
+#
+#         # Print local namespace
+#         print("Local namespace (inner_function):", locals())
+#
+#     # Print local namespace
+#     print("Local namespace (outer_function):", locals())
+#
+#     # Call inner function
+#     inner_function()
+#
+# # Print global namespace
+# print("Global namespace:", globals())
+#
+# # Call outer function
+# outer_function()
+#
+#
+#
+#
+# def calc3(a, b, c, d):
+#     print("a value is ", a)
+#     print("b value is ", b)
+#     print(f"sum of two numbers", a + b)
+#     print(f"sub of two number", a - b)
+#     print(f"mul of two number", a * b)
+#     print(f"div of two number", a / b)
+#     return a + b, a - b, a * b, a / b
+#
+# calc3(10,20,30,40)
+#
+# def cal(*args,d=10):
+#     sum =0
+#     for i in args:
+#         sum=sum+i
+#     return sum,d
+#
+# print(cal(20,50,300,100,d=100))
+#
+# def cal2(**kwargs):
+#     sum=0
+#     for value in kwargs.values():
+#         sum=sum+value
+#     return sum
+#
+# print(cal2(a=10,b=20))
+#
+# def f(arg1,arg2,arg3=4,arg4=8):
+#     print(arg1,arg2,arg3,arg4)
+
+
+# 1.	f(3,2) ==>	3 2 4  8
+#
+# 2.	f(10,20,30,40) ===>10 20 30 40
+# 3.	f(25,50,arg4=100) ==>25 50 4 100
+#
+# 4.	f(arg4=2,arg1=3,arg2=4)===>3 4 4 2
+# 5.	f()===>Invalid
+# TypeError: f() missing 2 required positional arguments: 'arg1' and 'arg2'
+#
+# 6.	f(arg3=10,arg4=20,30,40)	==>Invalid
+# SyntaxError: positional argument follows keyword argument
+# [After keyword arguments we should not take positional arguments]
+#
+# 7.	f(4,5,arg2=6)==>Invalid
+# TypeError: f() got multiple values for argument 'arg2'
+# 8.	f(4,5,arg3=5,arg5=6)==>Invalid
+# TypeError: f() got an unexpected keyword argument 'arg5'
 
 def outer_function():
     outer_var = "I'm an outer variable"
-
     def inner_function():
         inner_var = "I'm an inner variable"
-
         # Print local namespace
         print("Local namespace (inner_function):", locals())
-
     # Print local namespace
     print("Local namespace (outer_function):", locals())
-
     # Call inner function
     inner_function()
 
@@ -149,57 +218,71 @@ print("Global namespace:", globals())
 # Call outer function
 outer_function()
 
+a= 10
+
+b=20
+
+def sum():
+    c=30
+    return a+b+c
+
+# Built-in namespace
+print(len)  # 'len' is a built-in function
+print(ValueError)  # 'ValueError' is a built-in exception
+
+# Global namespace
+global_var = 10  # global variable
+
+def func():
+    print(global_var)  # accessing global variable from within a function
+
+func()
+
+# Enclosing namespace
+def outer_func():
+    outer_var = "outer"
+
+    def inner_func():
+        print(outer_var)  # accessing variable from enclosing namespace
+
+    inner_func()
+
+outer_func()
 
 
+def my_function():
+    local_var = "local"
+    print(local_var)  # accessing local variable
 
-def calc3(a, b, c, d):
-    print("a value is ", a)
-    print("b value is ", b)
-    print(f"sum of two numbers", a + b)
-    print(f"sub of two number", a - b)
-    print(f"mul of two number", a * b)
-    print(f"div of two number", a / b)
-    return a + b, a - b, a * b, a / b
+my_function()
 
-calc3(10,20,30,40)
+a= 10
+c=40
 
-def cal(*args,d=10):
-    sum =0
-    for i in args:
-        sum=sum+i
-    return sum,d
+def pr():
+    global a
+    a=301
+    b=400
+    print(locals())
+    def pr2():
+        print(a)
+        print(c)
+        d=500
+        print(locals())
+        print(globals())
+    pr2()
 
-print(cal(20,50,300,100,d=100))
+pr()
+# print(a)
 
-def cal2(**kwargs):
-    sum=0
-    for value in kwargs.values():
-        sum=sum+value
-    return sum
+print(None)
 
-print(cal2(a=10,b=20))
-
-def f(arg1,arg2,arg3=4,arg4=8):
-    print(arg1,arg2,arg3,arg4)
+fun = lambda a:a*2
 
 
-1.	f(3,2) ==>	3 2 4  8
+print(list(map(fun,[1,2,3])))
 
-2.	f(10,20,30,40) ===>10 20 30 40
-3.	f(25,50,arg4=100) ==>25 50 4 100
-
-4.	f(arg4=2,arg1=3,arg2=4)===>3 4 4 2
-5.	f()===>Invalid
-TypeError: f() missing 2 required positional arguments: 'arg1' and 'arg2'
-
-6.	f(arg3=10,arg4=20,30,40)	==>Invalid
-SyntaxError: positional argument follows keyword argument
-[After keyword arguments we should not take positional arguments]
-
-7.	f(4,5,arg2=6)==>Invalid
-TypeError: f() got multiple values for argument 'arg2'
-8.	f(4,5,arg3=5,arg5=6)==>Invalid
-TypeError: f() got an unexpected keyword argument 'arg5'
+print(globals())
 
 
 
