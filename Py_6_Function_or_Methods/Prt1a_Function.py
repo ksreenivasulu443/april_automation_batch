@@ -16,7 +16,7 @@ print(calc4(5, 7, 3))
 result = calc4(5, 7, 3)
 print(result)
 
-sub, sum,mul, div, sal, name = calc5(10,20)
+sub, sum,mul, div, sal, name = calc4(10,20)
 
 print("sum", sum)
 print("sub", sub)

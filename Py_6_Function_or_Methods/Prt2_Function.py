@@ -55,4 +55,69 @@ def calc(*args):
         sum = i + sum
     return sum
 
-print(calc(1, 2, 3))
+print("sum of args is", calc(1, 2, 3))
+print("sum of args is", calc(1, 2, 3, 4))
+print("sum of args is", calc(1, 2, 3, 4, 5))
+
+
+# a = [1, 4, 6]
+# b = [2, 4, 8]
+def calc1(a, b):
+    print("list values", a)
+    print("list values", b)
+    ls = a+b
+    print("list values", ls)
+    sum=0
+    for i in ls:
+        sum = i + sum
+    return sum
+
+print("sum of list values is", calc1([1, 4, 6], [2, 4, 8]))
+
+
+def fruits(ls1):
+    i = 0
+    while i <= len(ls1):
+        if ls1[i] == "Coconut":
+            print(ls1[i])
+            break
+            # print(ls1[i])
+        i = i + 1
+    return ls1[i]
+
+print("Search completed and fruit is", fruits(ls1 = ["Apple", "Banana", "Coconut"]))
+
+
+num = input("Enter the numbers:")  # 2, 4, 6, 8 in text format
+numbers = num.split(",")
+res = [eval(i) for i in numbers]
+print("Modified list is: ", res)
+
+
+
+l = ['1', '2', '3', '4']
+
+for i, item in enumerate(l):
+
+    try:
+        l[i] = int(float(item))
+    except ValueError:
+        l[i] = item
+
+print(l)
+# ld = eval(l)
+# print(ld)
+
+lis = ['1', '-4', '3', '-6', '7']
+res = [eval(i) for i in lis]
+print("Modified list is: ", res)
+
+lis1 =[]
+for i in lis:
+    res = eval(i)
+    lis1.append(res)
+
+print(lis1)
+
+
+

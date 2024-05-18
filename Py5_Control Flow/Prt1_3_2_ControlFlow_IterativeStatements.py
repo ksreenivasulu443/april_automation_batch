@@ -29,7 +29,8 @@ while i < len(ls):
 ls1 = ["Apple", "Banana", "Coconut"]
 i = 0
 while i <= len(ls1):
-    if i == "Banana":
+    if ls1[i] == "Banana":
+        print(ls1[i])
         break
         # print(ls1[i])
     i=i+1
