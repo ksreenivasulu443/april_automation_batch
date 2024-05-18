@@ -33,7 +33,6 @@ query = f""""select * from {schema}.{table} a inner join {schema}.{secondtable} 
 
 print(query)
 
-Print
 
 
 
