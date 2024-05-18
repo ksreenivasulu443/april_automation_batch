@@ -119,5 +119,17 @@ for i in lis:
 
 print(lis1)
 
+def display(**kwargs):
+    for k,v in kwargs.items():
+        print(k,"=",v)
+display(n1=10,n2=20,n3=30)
+display(rno=100,name="Durga",marks=70,subject="Java")
 
+def calc2(**kwargs):
+    print(kwargs, "and type is:", type(kwargs))
+    sum=0
+    for i in kwargs.values():
+        sum= i+sum
+    return sum
 
+print(calc2(a=1, b=2, c=3, d=4))
