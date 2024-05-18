@@ -70,20 +70,20 @@
 #     return number_max
 # print("max of 3 numbers:",max_no(1,2,30))
 
-def fact_num(a):
+def fact_num(fact):
     fact=1
     for i in range(1,i+1):
         fact=fact*i
     return fact
-print(f"factorials of {} is:",fact)
+print(f"factorials of {fact} is:",fact)
 
 
-
-def factorial(n):
-    result=1
-    for i in range(1,n+1):
-        result*=i
-        print("factorial ")
+#
+# def factorial(n):
+#     result=1
+#     for i in range(1,n+1):
+#         result*=i
+#         print("factorial ")
 
 
 
