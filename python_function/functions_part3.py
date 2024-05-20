@@ -18,17 +18,22 @@ import pandas as pd
 
 
 
-def read_fun(path):
+def read_fun(path, file_type):
     print("i am reading data from :", path)
-    a = pd.read_csv(path)
-    return a
+    if file_type=='csv':
+        df = pd.read_csv(path)
+    elif file_type =='excel':
+        df= pd.read_excel(path)
+    return df
 
 
-source = read_fun('/Users/harish/PycharmProjects/april_automation_batch/python_function/source.csv')
+source = read_fun('/Users/harish/PycharmProjects/april_automation_batch/python_function/source.csv','csv')
 print(type(source))
 print(source.head(3))
-target = read_fun('/Users/harish/PycharmProjects/april_automation_batch/python_function/target.csv')
+target = read_fun('/Users/harish/Documents/April batch/Notes/April_batch_class_excel_notes.xlsx', 'excel')
 print(target.head(3))
+
+r"/Users/harish/PycharmProjects/april_automation_batch/python_function/source.csv"
 
 
 def count_check(source, target):
