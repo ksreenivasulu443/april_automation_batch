@@ -1,3 +1,4 @@
+import builtins
 
 # # # # ls = []
 # # # # print("type of ls ", type(ls))
@@ -293,4 +294,53 @@
 #
 # # check and print type converted_num variable
 # print("Type After conversion : ",type(converted_num))
+
+# print("gobals", globals())
+#
+# a= 10
+#
+# print("gobals", globals())
+#
+# def cal(a,b):
+#     b=20
+#     print("locals",locals())
+#     def add():
+#         c=20
+#         print("locals inside add", locals())
+#         return c+b
+#     add()
+#     return a+b
+# print("gobals", globals())
+# add= cal(10,20)
+# print("gobals", globals())
+
+# len('xyz')
+
+print(len)
+print(ValueError)
+print(type)
+
+
+add = lambda a,b: a+b
+
+print(add(4,5))
+
+convert_cols_lower = lambda col : col.lower()
+
+print(convert_cols_lower('Name'))
+
+cols= ['Full_Name','First_name','last_name','middle_name', 'Suffix_name','Phone']
+
+cols = map(convert_cols_lower,cols)
+
+print(list(cols))
+
+cols= ['Full_Name','First_name','last_name','middle_name', 'Suffix_name','Phone']
+
+select_name_columns = lambda col : col.lower().endswith('name')
+
+sel = filter(select_name_columns, cols)
+
+print(list(sel))
+
 
