@@ -31,13 +31,27 @@ def calc(a,b,c,d=0):
 # print(calc3(10,20,30,30,10))
 
 # variable length keyword arguments
-def calc4(**kwargu):
-    print(kwargu)
-    print('type of args',type(kwargu))
-    sum=0
-    for value in kwargu.values():
-        sum=sum+value
-    return sum
-print(calc4(a=10,b=20,c=30,d=30,e=10))
+# def calc4(**kwargu):
+#     print(kwargu)
+#     print('type of args',type(kwargu))
+#     sum=0
+#     for value in kwargu.values():
+#         sum=sum+value
+#     return sum
+# print(calc4(a=10,b=20,c=30,d=30,e=10))
+
+#code to pass variable length arguments using input method:
+def calc(*args):
+    print(args)
+    print("type of args", type(args))
+    total = 0
+    for i in args:
+        total += i
+    return total
+
+num = input("Enter values separated by commas: ")
+numbers = [int(x) for x in num.split(',')]  # Convert input values to integers
+print("Numbers:", numbers)
+print("Sum:", calc(*numbers))
 
 
