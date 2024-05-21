@@ -315,32 +315,44 @@ import builtins
 # print("gobals", globals())
 
 # len('xyz')
+#
+# print(len)
+# print(ValueError)
+# print(type)
+#
+#
+# add = lambda a,b: a+b
+#
+# print(add(4,5))
+#
+# convert_cols_lower = lambda col : col.lower()
+#
+# print(convert_cols_lower('Name'))
+#
+# cols= ['Full_Name','First_name','last_name','middle_name', 'Suffix_name','Phone']
+#
+# cols = map(convert_cols_lower,cols)
+#
+# print(list(cols))
+#
+# cols= ['Full_Name','First_name','last_name','middle_name', 'Suffix_name','Phone']
+#
+# select_name_columns = lambda col : col.lower().endswith('name')
+#
+# sel = filter(select_name_columns, cols)
+#
+# print(list(sel))
 
-print(len)
-print(ValueError)
-print(type)
+var =11
+for j in range(2, 10, 1):
+        if var % 2 == 0:
+            print(var)
+            continue
+            var += 1
+            print(var)
 
-
-add = lambda a,b: a+b
-
-print(add(4,5))
-
-convert_cols_lower = lambda col : col.lower()
-
-print(convert_cols_lower('Name'))
-
-cols= ['Full_Name','First_name','last_name','middle_name', 'Suffix_name','Phone']
-
-cols = map(convert_cols_lower,cols)
-
-print(list(cols))
-
-cols= ['Full_Name','First_name','last_name','middle_name', 'Suffix_name','Phone']
-
-select_name_columns = lambda col : col.lower().endswith('name')
-
-sel = filter(select_name_columns, cols)
-
-print(list(sel))
+else:
+    print("for loop else")
+print(var)
 
 
