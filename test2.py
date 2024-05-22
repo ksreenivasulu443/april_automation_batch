@@ -342,17 +342,119 @@ import builtins
 # sel = filter(select_name_columns, cols)
 #
 # print(list(sel))
+#
+# var =11
+# for j in range(2, 10, 1):
+#         if var % 2 == 0:
+#             print(var)
+#             continue
+#             var += 1
+#             print(var)
+#
+# else:
+#     print("for loop else")
+# print(var)
 
-var =11
-for j in range(2, 10, 1):
-        if var % 2 == 0:
-            print(var)
-            continue
-            var += 1
-            print(var)
+print("this is first line")
+print("this mid of code")
+try:
+    a= 1#int(input("enter a value:"))
+    b= 2#int(input("enter b value"))
+    print("value of a is", a)
+    print("value of b is ", b)
+    print("a and b multiplication", a*b)
+    print("div of a and b ", a/b)
+    print("c value is",c)
+# except ValueError as e:
+#     print("Hey some thing wrong..Check datatype",e)
+# except ZeroDivisionError as e:
+#     print("divisor is zero & Pls retry divisor non-zero value", e)
+# except NameError as e:
+#     print("name error, pls check variable definination", e)
 
-else:
-    print("for loop else")
-print(var)
+except (ValueError,ZeroDivisionError) as e:
+    print("Hey some thing wrong..Check datatype",e)
+except NameError as e:
+    print("name error, pls check variable definination", e)
+
+print("this is last line")
+###Assertion##
+try:
+    assert 2 + 2 == 4
+except AssertionError as e:
+    print(f"AssertionError: {e}")
+###Assertion##
+
+###Attribute exception###
+str = 'sreeni'
+try:
+    str.UPPER()
+except AttributeError as e:
+    print(f"AttributeError: {e}")
+###Attribute exception###
 
 
+import math
+try:
+    math.exp(1000)  # This would normally not raise FloatingPointError, but OverflowError
+except FloatingPointError as e:
+    print(f"FloatingPointError: {e}")
+except OverflowError as e:
+    print(f"OverflowError (in place of FloatingPointError): {e}")
+
+
+try:
+    import non_existent_module
+except ImportError as e:
+    print(f"ImportError: {e}")
+
+
+try:
+    my_list = [1, 2, 3]
+    print(my_list[5])
+except IndexError as e:
+    print(f"IndexError: {e}")
+
+try:
+    my_dict = {"name": "John"}
+    print(my_dict["age"])
+except KeyError as e:
+    print(f"KeyError: {e}")
+
+# import time
+# try:
+#     while True:
+#         time.sleep(1)
+# except KeyboardInterrupt:
+#     print("KeyboardInterrupt: Program interrupted by user")
+
+
+try:
+    x = [1] * (10**10)
+except MemoryError as e:
+    print(f"MemoryError: {e}")
+
+try:
+    print(unknown_variable)
+except NameError as e:
+    print(f"NameError: {e}")
+
+
+
+
+import os
+import io
+
+file_path = 'example.txt'
+
+try:
+    with open(file_path, 'r') as file:
+        content = file.read()
+except FileNotFoundError as e:
+    print(f"FileNotFoundError: {e}")
+except IsADirectoryError as e:
+    print(f"IsADirectoryError: {e}")
+except PermissionError as e:
+    print(f"PermissionError: {e}")
+except OSError as e:  # Catch-all for other OS-related errors
+    print(f"OSError: {e}")
