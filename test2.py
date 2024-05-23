@@ -355,106 +355,195 @@ import builtins
 #     print("for loop else")
 # print(var)
 
-print("this is first line")
-print("this mid of code")
-try:
-    a= 1#int(input("enter a value:"))
-    b= 2#int(input("enter b value"))
-    print("value of a is", a)
-    print("value of b is ", b)
-    print("a and b multiplication", a*b)
-    print("div of a and b ", a/b)
-    print("c value is",c)
-# except ValueError as e:
+# print("this is first line")
+# print("this mid of code")
+# try:
+#     a= 1#int(input("enter a value:"))
+#     b= 2#int(input("enter b value"))
+#     print("value of a is", a)
+#     print("value of b is ", b)
+#     print("a and b multiplication", a*b)
+#     print("div of a and b ", a/b)
+#     print("c value is",c)
+# # except ValueError as e:
+# #     print("Hey some thing wrong..Check datatype",e)
+# # except ZeroDivisionError as e:
+# #     print("divisor is zero & Pls retry divisor non-zero value", e)
+# # except NameError as e:
+# #     print("name error, pls check variable definination", e)
+#
+# except (ValueError,ZeroDivisionError) as e:
 #     print("Hey some thing wrong..Check datatype",e)
-# except ZeroDivisionError as e:
-#     print("divisor is zero & Pls retry divisor non-zero value", e)
 # except NameError as e:
 #     print("name error, pls check variable definination", e)
-
-except (ValueError,ZeroDivisionError) as e:
-    print("Hey some thing wrong..Check datatype",e)
-except NameError as e:
-    print("name error, pls check variable definination", e)
-
-print("this is last line")
-###Assertion##
-try:
-    assert 2 + 2 == 4
-except AssertionError as e:
-    print(f"AssertionError: {e}")
-###Assertion##
-
-###Attribute exception###
-str = 'sreeni'
-try:
-    str.UPPER()
-except AttributeError as e:
-    print(f"AttributeError: {e}")
-###Attribute exception###
-
-
-import math
-try:
-    math.exp(1000)  # This would normally not raise FloatingPointError, but OverflowError
-except FloatingPointError as e:
-    print(f"FloatingPointError: {e}")
-except OverflowError as e:
-    print(f"OverflowError (in place of FloatingPointError): {e}")
-
-
-try:
-    import non_existent_module
-except ImportError as e:
-    print(f"ImportError: {e}")
-
-
-try:
-    my_list = [1, 2, 3]
-    print(my_list[5])
-except IndexError as e:
-    print(f"IndexError: {e}")
-
-try:
-    my_dict = {"name": "John"}
-    print(my_dict["age"])
-except KeyError as e:
-    print(f"KeyError: {e}")
-
-# import time
+#
+# print("this is last line")
+# ###Assertion##
 # try:
-#     while True:
-#         time.sleep(1)
-# except KeyboardInterrupt:
-#     print("KeyboardInterrupt: Program interrupted by user")
+#     assert 2 + 2 == 4
+# except AssertionError as e:
+#     print(f"AssertionError: {e}")
+# ###Assertion##
+#
+# ###Attribute exception###
+# str = 'sreeni'
+# try:
+#     str.UPPER()
+# except AttributeError as e:
+#     print(f"AttributeError: {e}")
+# ###Attribute exception###
+#
+#
+# import math
+# try:
+#     math.exp(1000)  # This would normally not raise FloatingPointError, but OverflowError
+# except FloatingPointError as e:
+#     print(f"FloatingPointError: {e}")
+# except OverflowError as e:
+#     print(f"OverflowError (in place of FloatingPointError): {e}")
+#
+#
+# try:
+#     import non_existent_module
+# except ImportError as e:
+#     print(f"ImportError: {e}")
+#
+#
+# try:
+#     my_list = [1, 2, 3]
+#     print(my_list[5])
+# except IndexError as e:
+#     print(f"IndexError: {e}")
+#
+# try:
+#     my_dict = {"name": "John"}
+#     print(my_dict["age"])
+# except KeyError as e:
+#     print(f"KeyError: {e}")
+#
+# # import time
+# # try:
+# #     while True:
+# #         time.sleep(1)
+# # except KeyboardInterrupt:
+# #     print("KeyboardInterrupt: Program interrupted by user")
+#
+#
+# try:
+#     x = [1] * (10**10)
+# except MemoryError as e:
+#     print(f"MemoryError: {e}")
+#
+# try:
+#     print(unknown_variable)
+# except NameError as e:
+#     print(f"NameError: {e}")
+#
+#
+#
+#
+# import os
+# import io
+#
+# file_path = 'example.txt'
+#
+# try:
+#     with open(file_path, 'r') as file:
+#         content = file.read()
+# except FileNotFoundError as e:
+#     print(f"FileNotFoundError: {e}")
+# except IsADirectoryError as e:
+#     print(f"IsADirectoryError: {e}")
+# except PermissionError as e:
+#     print(f"PermissionError: {e}")
+# except OSError as e:  # Catch-all for other OS-related errors
+#     print(f"OSError: {e}")
+
+import numpy as np
+
+arr = np.array([[1,2,'3',4],[0,1,2,3]])
+print("type of arr", type(arr))
+print(arr)
+
+arr = np.array([1,2,4])
+print("type of arr", type(arr))
+print(type(arr[0]))
+print(type(arr[1]))
+
+sqrt_array = np.sqrt(arr)
+
+print(sqrt_array)
+
+random_normal = np.random.randn(3, 3)
+print("random_normal",random_normal)
+
+random_normal_custom = np.random.normal(5, 2, size=(3, 3))
+
+print("random_normal_custom",random_normal_custom)
+
+array = np.array([1, 2, 3, 4, 5])
+random_choice = np.random.choice(array, size=1, replace=False)
+
+print("random_choice",random_choice)
+
+import pandas as pd
+
+df = pd.read_csv("/Users/harish/Downloads/tested.csv")
+
+print(df.head(2))
+
+print(df.tail(2))
+
+print(df.describe())
+
+print(df.iloc[0:5,2:4])
+
+print(df.loc[0:4, 'Pclass':'Name'])
+
+print(df[df.Pclass == 3])
+
+print(df.count())
+
+print(df.columns)
+
+print(df.dtypes)
+
+df.shape
+
+from pandasql import sqldf
+
+print(sqldf("select count(*) from df"))
 
 
-try:
-    x = [1] * (10**10)
-except MemoryError as e:
-    print(f"MemoryError: {e}")
+def count_val(source, target):
+    src_cnt = sqldf("select count(*) count1 from source")
+    src_cnt = source.shape[0]
+    tgt_cnt = target.shape[0]
+    tgt_cnt = sqldf("select count(*) count1 from target")
+    if list(src_cnt.count1) == list(tgt_cnt.count1):
+        print("matching")
+    else:
+        print("count validation failed", src_cnt-tgt_cnt)
 
-try:
-    print(unknown_variable)
-except NameError as e:
-    print(f"NameError: {e}")
+def Column_value_val(source, target):
+    Mismatch_S_T = sqldf("select *  from source except select *  from target")
+    Mismatch_T_S = sqldf("select *  from target except select *  from source")
+    print("Mismatch records between source and target")
+    print(Mismatch_S_T)
+    print("Mismatch records between target and source")
+    print(Mismatch_T_S)
+    source.compare(target)
 
+#Column_value_val(source, target )
 
+def duplicate(target, key_column ):
+    duplicate = sqldf(f'''select {key_column}, count(*)  from target"
+                       group by {key_column} having count(*)>1''')
+    if duplicate.shape[0]>0:
+        print("duplicates")
+    else:
+        print("no duplicates")
 
+df = pd.DataFrame(([1,2,3],[4,5,6]), columns=['sno','name','nam'])
+print(df.head())
 
-import os
-import io
-
-file_path = 'example.txt'
-
-try:
-    with open(file_path, 'r') as file:
-        content = file.read()
-except FileNotFoundError as e:
-    print(f"FileNotFoundError: {e}")
-except IsADirectoryError as e:
-    print(f"IsADirectoryError: {e}")
-except PermissionError as e:
-    print(f"PermissionError: {e}")
-except OSError as e:  # Catch-all for other OS-related errors
-    print(f"OSError: {e}")
