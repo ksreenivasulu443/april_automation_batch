@@ -62,10 +62,8 @@
 def calc(**kwargs):
     print(kwargs)
     print("type of kwargs:",type(kwargs))
-    list1=[]
     for key in kwargs.keys():
-            list1.append(keys)
-    return key
+        return key
 
-key=(calc(a=10,b=20,c=30))
+# key=(calc(a=10,b=20,c=30))
 
