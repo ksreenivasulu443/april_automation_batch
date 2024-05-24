@@ -222,7 +222,6 @@ import builtins
 # print(type(range(5))
 
 
-
 # cott/tiger@host.docker.internal:1521/freepdb1
 
 #
@@ -461,11 +460,11 @@ import builtins
 
 import numpy as np
 
-arr = np.array([[1,2,'3',4],[0,1,2,3]])
+arr = np.array([[1, 2, '3', 4], [0, 1, 2, 3]])
 print("type of arr", type(arr))
 print(arr)
 
-arr = np.array([1,2,4])
+arr = np.array([1, 2, 4])
 print("type of arr", type(arr))
 print(type(arr[0]))
 print(type(arr[1]))
@@ -475,16 +474,16 @@ sqrt_array = np.sqrt(arr)
 print(sqrt_array)
 
 random_normal = np.random.randn(3, 3)
-print("random_normal",random_normal)
+print("random_normal", random_normal)
 
 random_normal_custom = np.random.normal(5, 2, size=(3, 3))
 
-print("random_normal_custom",random_normal_custom)
+print("random_normal_custom", random_normal_custom)
 
 array = np.array([1, 2, 3, 4, 5])
 random_choice = np.random.choice(array, size=1, replace=False)
 
-print("random_choice",random_choice)
+print("random_choice", random_choice)
 
 import pandas as pd
 
@@ -496,11 +495,11 @@ print(df.tail(2))
 
 print(df.describe())
 
-print(df.iloc[0:5,2:4])
+print(df.iloc[0:5, 2:4])
 
 print(df.loc[0:4, 'Pclass':'Name'])
 
-print(df[df.Pclass == 3])
+print(df[(df.Pclass == 3) & True])
 
 print(df.count())
 
@@ -516,14 +515,15 @@ print(sqldf("select count(*) from df"))
 
 
 def count_val(source, target):
-    src_cnt = sqldf("select count(*) count1 from source")
+    src_cnt = sqldf("select count(*) count1 from df")
     src_cnt = source.shape[0]
     tgt_cnt = target.shape[0]
     tgt_cnt = sqldf("select count(*) count1 from target")
     if list(src_cnt.count1) == list(tgt_cnt.count1):
         print("matching")
     else:
-        print("count validation failed", src_cnt-tgt_cnt)
+        print("count validation failed", src_cnt - tgt_cnt)
+
 
 def Column_value_val(source, target):
     Mismatch_S_T = sqldf("select *  from source except select *  from target")
@@ -534,16 +534,17 @@ def Column_value_val(source, target):
     print(Mismatch_T_S)
     source.compare(target)
 
-#Column_value_val(source, target )
 
-def duplicate(target, key_column ):
+# Column_value_val(source, target )
+
+def duplicate(target, key_column):
     duplicate = sqldf(f'''select {key_column}, count(*)  from target"
                        group by {key_column} having count(*)>1''')
-    if duplicate.shape[0]>0:
+    if duplicate.shape[0] > 0:
         print("duplicates")
     else:
         print("no duplicates")
 
-df = pd.DataFrame(([1,2,3],[4,5,6]), columns=['sno','name','nam'])
-print(df.head())
 
+df = pd.DataFrame(([1, 2, 3], [4, 5, 6]), columns=['sno', 'name', 'nam'])
+print(df.head())
