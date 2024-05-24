@@ -9,6 +9,7 @@ data = {'Name': ['Alice', 'Bob', 'Charlie'],'Age': [25, 30, 35],
 
 df = pd.DataFrame(data)
 print(df)
+
 df.to_sql(name='test_data', con=conn)
 cnt = pd.read_sql('SELECT count(*) FROM test_data', conn)
 rec = pd.read_sql('SELECT * FROM test_data', conn)
