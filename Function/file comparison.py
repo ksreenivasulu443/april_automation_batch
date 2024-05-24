@@ -14,13 +14,21 @@ print(source.head(3))
 target = read_fun(r"C:\Users\mahab\PycharmProjects\april_automation_batch\Function\target.csv")
 print(target.head(3))
 
-def count_check(source,target):
+
+def count_check(source, target):
     source_count = source.shape[0]
     target_count = target.shape[0]
     if source_count == target_count:
         print(f"count is matching with {source_count} and {target_count}")
     else:
-        print(f"count is not matching with {source_count} and {target_count} and abs({source_count}-{target_count})" )
+        print(f"count is not matching with {source_count} and {target_count} and abs({source_count}-{target_count})")
 
-count_check(source,target)
 
+count_check(source, target)
+
+
+def data_compare(source, target):
+    return source.compare(target)
+
+
+print(data_compare(source, target))
