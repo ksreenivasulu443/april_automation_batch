@@ -86,9 +86,9 @@ from pandasql import sqldf
 # print(source_csv[(source_csv.Identifier]>5) & (source_csv.surname like 'H%']))
 # print(source_csv[(source_csv.Identifier>5) & (source_csv.surname like 'H%')])
 
------Data Profiling------
+# -----Data Profiling------
 
-# from ydata_profiling import ProfileReport
+from ydata_profiling import ProfileReport
 #
 # df=pd.read_csv(r'C:\Users\bbhoi\PycharmProjects\datapythonautomation\Files\Contact_info.csv')
 #

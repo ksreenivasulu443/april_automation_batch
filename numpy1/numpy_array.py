@@ -32,5 +32,8 @@
 # series=pd.Series([1,2,3,4,5],index=['a','b','c','d','e'])
 # print(dir(series))
 
-
+# import numpy as np
+# arr=np.array([1,2,3,40])
+# print(arr)
+# print('value & type of array:', arr[0],type(arr[0]))
 
