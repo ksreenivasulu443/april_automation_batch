@@ -1,6 +1,6 @@
 # import numpy as np
-#
-#import pandas as pd
+#Bool<int<float<str
+import pandas as pd
 #
 # arr=np.array([1,2,3,'sreeni'])
 # print("type of arr",type(arr))
@@ -25,4 +25,44 @@ df2=pd.DataFrame([11,12,13,14],columns=['sno'],index=['a','b','c','d'])
 print(df2)
 
 print(help(pd.read_csv))
+
+
+import pyarrow
+from pandasql import sqldf
+
+print("reading csv files")
+source = pd.read_csv(r"C:\Users\mahab\PycharmProjects\april_automation_batch\Files\Contact_info.csv")
+target =pd.read_csv(r"C:\Users\mahab\PycharmProjects\april_automation_batch\Files\Contact_info_t.csv")
+print("print read_csv",source)
+
+# print("reading parquet files")
+# source_par = pd.read_parquet(r"C:\Users\mahab\PycharmProjects\april_automation_batch\Files\userdata1.parquet")
+# print("print parquet_files",source_par)
+#
+# print("reading json files")
+# source_json = pd.read_json(r"C:\Users\mahab\PycharmProjects\april_automation_batch\Files\sample1.json")
+# print("print parquet_files",source_json)
+
+# print(sqldf(''' select * from source where identifier=1
+#               or Surname='Kattubadi' '''))
+# print(sqldf((''' select * from source except select * from target
+#              ''')))
+
+print(source.head(2))
+# print(source.tail(2))
+print(source.describe())
+
+print("select identifier column data")
+print(source[['Identifier','Phone','birthmonth']])
+
+print("select all columns with data types")
+print(source.columns)
+print(source.dtypes)
+
+print(source[(source['Identifier']>9)])
+
+print(source[(source['Identifier']>5) & (source['Surname'] == 'Arun')])
+
+#add new column
+df['Salary']=[7000,8000,9000]
 
