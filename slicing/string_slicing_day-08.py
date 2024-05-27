@@ -59,3 +59,4 @@ print(f"fetch the character from the {str} :",str[0:9:1])
 print(f"the character available in the {str} is :", str[2:6:2])
 print(f"the character are in the {str} are :",str[0:17:1])  
 print(f"the thd available character in {str} is :", str[5:13:3])
+
