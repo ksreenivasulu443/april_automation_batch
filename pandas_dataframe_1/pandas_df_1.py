@@ -1,16 +1,16 @@
+import pandas as pd
+from pandasql import sqldf
 
 # •import pandas as pd
 # •data = {'Name': ['Alice', 'Bob', 'Charlie'],'Age': [25, 30, 35],'City': ['New York', 'Los Angeles', 'Chicago’] }
 # df= pd.DataFrame(data)
 # print(df)
 
-import pandas as pd
 data = {'Name': ['Alice', 'Bob', 'Charlie'],'Age': [25, 30, 35],
         'City': ['New York', 'Los Angeles', 'Chicago']}
 df = pd.DataFrame(data)
 print(df)
 
-import pandas as pd
 data = {'Name': ['Alice', 'Bob', 'Charlie'],'Age': [25, 30, 35],
         'City': ['New York', 'Los Angeles', 'Chicago']}
 df = pd.DataFrame(data)
