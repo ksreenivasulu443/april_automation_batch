@@ -80,3 +80,5 @@ print(source[source['SAL'] <1000])
 
 print(source[(source['SAL'] <1000) & (source['DEPTNO']==20)])
 print(source[(source.SAL <1000) & (source.DEPTNO==30)])
+
+

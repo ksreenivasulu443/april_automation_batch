@@ -14,3 +14,6 @@ profile = ProfileReport(df_csv)
 
 profile.to_file(r"C:\Users\User\PycharmProjects\pyspark\Arpril_automation_python\Files\out.html")
 
+
+
+
