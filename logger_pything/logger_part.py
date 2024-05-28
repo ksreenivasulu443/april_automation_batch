@@ -21,13 +21,13 @@ import pandas as pd
 
 # Default level is Warning
 
-logging.basicConfig(filename='new.txt', filemode='a',level=logging.NOTSET,
-                   format='%(asctime)s - %(levelname)s - %(message)s - %(name)s-%(funcName)s-%(lineno)d')
+logging.basicConfig(filename='log2.txt',filemode='w',level=logging.CRITICAL,
+    format='%(asctime)s-%(levelname)s - %(message)s - %(name)s-%(funcName)s-%(lineno)d')
 
 logger = logging.getLogger()
 # print("starting...")
 # logger.debug("debug") #
-# #print("print debug")
+# print("print debug")
 # logger.info("km travelled")
 # print("print km travelled")
 # logger.warning("had to diversion")
@@ -38,25 +38,84 @@ logger = logging.getLogger()
 # print("taken another mode of tarvel")
 # logger.info("this second info")
 # print("end of journey....")
-# def read(file_type, path):
-#     if file_type =='csv':
-#         df = pd.read_csv(path)
-#         #print("Data has been read successfully and file path is " , path )
-#         logger.info("Data has been read successfully and file path is ")
-#         logger.debug("debug")
-#         return df
-#
-#     elif file_type == 'excel':
-#         df = pd.read_excel(path)
-#         #print("Data has been read successfully and file path is " , path )
-#         logger.info("Data has been read successfully and file path is ")
-#         return df
-#     else:
-#         print("Please enter correct file type")
-#         logger.error(f"please enter correct file format, Current {file_type} is not handled")
-#
-#
-# df = read('csv', r"/Users/harish/PycharmProjects/april_automation_batch/FIles/Contact_info.csv")
-# print(df.head())
-#
-# # df3 = read("parquet", 'xyz.parquet')
+
+
+
+def read_file(file_type, path):
+    if file_type =='csv':
+        df = pd.read_csv(path)
+        print("Data has been read successfully and file path is " , path )
+        logger.info(f"Data has been read successfully and path is {path}")
+        return df
+
+    elif file_type == 'excel':
+        df = pd.read_excel(path)
+        #print("Data has been read successfully and file path is " , path )
+        logger.info("Data has been read successfully ")
+        return df
+    else:
+        logger.error(f"please enter correct file format, Current {file_type} file is not handled")
+        logger.critical("file path not foundit is critical")
+
+
+df = read_file('csv', r"/Users/harish/PycharmProjects/april_automation_batch/FIles/Contact_info.csv")
+print(df.head())
+
+df2 = read_file('json','json.file')
+
+# df3 = read("parquet", 'xyz.parquet')
+
+
+import logging
+
+
+
+def main():
+    logging.info('Application started.')
+
+    try:
+        logging.debug('Attempting to perform a complex calculation.')
+        result = complex_calculation(3, 4)
+        logging.info(f'Calculation result: {result}')
+    except Exception as e:
+        logging.error(f'Error during calculation: {e}')
+
+    check_disk_space()
+    process_file('non_existent_file.txt')
+
+
+def complex_calculation(x, y):
+    logging.debug(f'Starting complex calculation with x={x} and y={y}')
+    result = x * y + 42
+    logging.debug(f'Result of calculation: {result}')
+    return result
+
+
+def check_disk_space():
+    disk_space = 5  # Assume we got this value from a system call
+    if disk_space < 10:
+        logging.warning(f'Disk space is low: {disk_space}GB remaining.')
+
+
+def process_file(file_path):
+    try:
+        with open(file_path, 'r') as file:
+            data = file.read()
+        # Process the file
+    except FileNotFoundError:
+        logging.error(f'File not found: {file_path}')
+    except Exception as e:
+        logging.error(f'An error occurred: {e}')
+
+
+def initialize_database():
+    try:
+        raise ConnectionError('Failed to connect to the database.')
+    except ConnectionError as e:
+        logging.critical(f'Critical error: {e}. Shutting down the application.')
+        exit(1)
+
+
+if __name__ == '__main__':
+    main()
+    initialize_database()

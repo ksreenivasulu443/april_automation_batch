@@ -1,0 +1,10 @@
+INFO - km travelled - root-<module>-31
+WARNING - had to diversion - root-<module>-33
+ERROR - car type puncture - root-<module>-35
+CRITICAL - print taken another mode of travel - root-<module>-37
+INFO - this second info - root-<module>-39
+2024-05-28 08:15:45,045-INFO - km travelled - root-<module>-31
+2024-05-28 08:15:45,045-WARNING - had to diversion - root-<module>-33
+2024-05-28 08:15:45,045-ERROR - car type puncture - root-<module>-35
+2024-05-28 08:15:45,045-CRITICAL - print taken another mode of travel - root-<module>-37
+2024-05-28 08:15:45,045-INFO - this second info - root-<module>-39
