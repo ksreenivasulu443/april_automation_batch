@@ -25,8 +25,8 @@ def count_check(source, target):
     for i in cnt:
         ls.append(cnt)
     print(ls)
-    scr_cnt = print(cnt)
-    trg_cnt = print(rec)
+    scr_cnt = print("scr_cnt",cnt)
+    trg_cnt = print("trg_cnt", rec)
     if scr_cnt == trg_cnt:
         print(f"count is matching: source count is {scr_cnt} and target count is {trg_cnt}")
     return (f"count is matching: source count is {scr_cnt} and target count is {trg_cnt}"), scr_cnt == trg_cnt
