@@ -1,3 +1,9 @@
+from pyspark.sql import SparkSession
+
+# Create SparkSession
+spark = SparkSession.builder.master("local[1]").appName("dataframe").getOrCreate()
+
+
 # Databricks notebook source
 
 df1 = spark.read.format("csv").option("header", "true").load("dbfs:/FileStore/shared_uploads/katsreen100@gmail.com/IPL_Ball_by_Ball_2008_2020.csv")
