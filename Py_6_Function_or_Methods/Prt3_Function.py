@@ -62,16 +62,16 @@ def fac_num(a):
 print(f"factorial of a is", fac_num(4))
 
 
-def factorial(n):
+def factorial11(n):
     if n == 0:
         return 1
     else:
-        a =n * factorial(n-1)
-        print(a, end=',')
+        a =n * factorial11(n-1)
+
 
         return a
 
-print(factorial(5))
+print("fct of 5 is", factorial11(5))
 
 def factorial1(n):
     result = 1
