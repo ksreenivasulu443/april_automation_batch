@@ -37,7 +37,7 @@ def cmp(p, r, t):
 print(cmp(10000, 10.25, 5))
 
 
-ls = [1, 2, 3 ,4 ,5]
+ls = [1, 2,3 ,4 ,5]
 
 print(ls.pop(1))
 print(ls)
