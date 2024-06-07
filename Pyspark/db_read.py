@@ -1,22 +1,23 @@
-# Databricks notebook source
-# jdbc_url = 'jdbc:snowflake://oborokf-kh65378.snowflakecomputing.com/?user=KSREENIVASULU&password=Dharmavaram1@&warehouse=COMPUTE_WH&db=SAMPLE&schema=CONTACT_INFO'
+from pyspark.sql import SparkSession
+
+jar_path = '/Users/harish/PycharmProjects/april_automation_batch/jars/snowflake-jdbc-3.14.3.jar'
+# Create SparkSession
+spark = SparkSession.builder.master("local[2]") \
+    .appName("test") \
+    .config("spark.jars", '/Users/harish/PycharmProjects/april_automation_batch/jars/snowflake-jdbc-3.14.3.jar') \
+    .config("spark.driver.extraClassPath", '/Users/harish/PycharmProjects/april_automation_batch/jars/snowflake-jdbc-3.14.3.jar') \
+    .config("spark.executor.extraClassPath", '/Users/harish/PycharmProjects/april_automation_batch/jars/snowflake-jdbc-3.14.3.jar') \
+    .getOrCreate()
+
+jdbc_url = 'jdbc:snowflake://oborokf-kh65378.snowflakecomputing.com/?user=KSREENIVASULU&password=Dharmavaram1@&warehouse=COMPUTE_WH&db=SAMPLE&schema=CONTACT_INFO'
 
 df = spark.read \
     .format("jdbc") \
     .option("driver", "net.snowflake.client.jdbc.SnowflakeDriver") \
-    .option("url", 'jdbc:snowflake://oborokf-kh65378.snowflakecomputing.com/?user=KSREENIVASULU&password=Dharmavaram1@&warehouse=COMPUTE_WH&db=SAMPLE&schema=CONTACT_INFO') \
-    .option("query", 'select identifier from CONTACT_INFO_RAW')     \
+    .option("url", jdbc_url) \
+    .option("dbtable", 'CONTACT_INFO_RAW')     \
     .load()
 
-1. create snowflake account
-2. download and install postgres db
-3. download and install oracle db
-4. Azure sqlserver db
 
-# COMMAND ----------
-
-df.display()
-
-# COMMAND ----------
-
+df.show()
 
