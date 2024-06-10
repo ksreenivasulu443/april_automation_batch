@@ -18,7 +18,7 @@ df2 = spark.read.format("jdbc"). \
     option("url", "jdbc:oracle:thin:@//localhost:1521/freepdb1"). \
     option("user", "scott"). \
     option("password", "tiger"). \
-    option("query", "select * from CONTACT_INFO_RAW"). \
+    option("dbtable", "CONTACT_INFO_RAW"). \
     option("driver", "oracle.jdbc.driver.OracleDriver").load()
 
 df2.show()
