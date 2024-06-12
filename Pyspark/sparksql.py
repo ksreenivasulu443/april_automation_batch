@@ -17,13 +17,11 @@ columns = ["firstname","lastname","country","state_name"]
 df = spark.createDataFrame(data = data, schema = columns)
 df.show()
 
+print("id of df first", id(df))
+
 df.createOrReplaceTempView('target')
 
-df2 = spark.sql(""" select upper(firstname) as firstname,lastname from target where lastname='Smith' 
+df = spark.sql(""" select upper(firstname) as firstname,lastname from target where lastname='Smith' 
                 or state_name ='CA' """)
 
-df2.show()
-
-%sql
-
-select * from target
+print("id of df after update", id(df))
