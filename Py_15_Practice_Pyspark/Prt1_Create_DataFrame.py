@@ -1,6 +1,8 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.types import *  # structType
 
+
+# Data should be pass as a Tuple and Columns in List to DataFrame
 spark = SparkSession.builder.master("local").appName("create data frame").getOrCreate()
 
 print("------------Method1--------------")
