@@ -33,10 +33,13 @@ print("memory of b ",id(b))
 
 # writing output to file
 file = open('test.txt', 'a')
-original = sys.stdout
+# original = sys.stdout
 sys.stdout = file
 
-print(a,b, sep=' ', end='\n', file=file, flush=False)
+print(a,b, sep=' ', end='\n', file=file, flush=True)
 print(a,b, flush=False)
 print(a,b, flush=False)
 print(a,b,c ,flush=False)
+
+for i in range(1,10000):
+    print(i,sep=' ', end='\n', file=file, flush=True)
