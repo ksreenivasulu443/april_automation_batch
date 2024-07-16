@@ -1,8 +1,8 @@
 """ This file is created to practice identifier function
     created by: Prashant on 04/19/2024"""
 
-a = 10  # here is variable_name and 10 variable value
-b = 20  # here is variable_name and 20 variable value
+a = 10  # here a is variable_name and 10 variable value
+b = 20  # here b is variable_name and 20 variable value
 
 name = 'ETL'  # here name is variable_name and ETL is variable value
 

@@ -5,6 +5,8 @@
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/venv2" />
     </content>
+    <content url="file://D:/1.ETL_Automation_By_Shree/spark-3.4.2-bin-hadoop3/python" />
+    <content url="jar://D:/1.ETL_Automation_By_Shree/spark-3.4.2-bin-hadoop3/python/lib/py4j-0.10.9.7-src.zip!/" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

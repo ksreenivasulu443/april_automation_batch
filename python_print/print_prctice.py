@@ -40,13 +40,13 @@ print("divided by a,b : ", a / b)
 print("sum values of a,b is : ", a+b, "and", "sub values of a,b is : ", a-b) #---------
 print("-"*50)
 
-# a = 10
-# b = 20
-# c = 0
-# print("value of a is :",a , end='\t')
-# print("value of b is :",b , end='\t')
-# print("value of c is :",c , end='\t')
-# print("Prashant",Prashant,end='\t') # not getting the output
+a = 10
+b = 20
+c = 0
+print("value of a is :",a , end='\t')
+print("value of b is :",b , end='\t')
+print("value of c is :",c , end='\t')
+print("Prashant",Prashant,end='\t') # not getting the output
 
 name = 'prashant'
 age = 30
@@ -55,6 +55,12 @@ print("the name and age in the given variable is =",name,age)
 print("name is",name,"and age is",age)
 print("name is",name,"and age is",age,sep='')
 print(f"name is {name} and age is {age}")
+
+
+
+
+
+
 
 
 

@@ -21,7 +21,6 @@ print("type of [10,'10', 'sreeni',10.5] ", type([10,'10', 'sreeni',10.5]))
 
 e = 10
 
-
 print("memory of a ",id(a))
 print("memory of e ",id(e))
 
@@ -40,3 +39,12 @@ print(a,b, sep=' ', end='\n', file=file, flush=False)
 print(a,b, flush=False)
 print(a,b, flush=False)
 print(a,b,c ,flush=False)
+
+name = 'Prashant'
+age = 20
+
+print(f"name is {name} and age is {age}")
+
+print("name is ", name, " and age is ", age, sep='')
+
+
