@@ -94,7 +94,7 @@ b = 20
 c = 20
 d = "Prashant"
 e = 100.5
-print("memory of f ", id(a),id(b), end='\t', sep='-')
+print("memory of f ", id(a),id(b), end='\t', sep='/')
 print("memory of d ", id(c))
 print("memory of b ", id(d))
 
@@ -105,5 +105,37 @@ print("type of d ", type(d))
 print("type of d ", type(e))
 
 print("*"*50)
+
+Name = 'Prashant'
+Age = 32
+print(Name,Age)
+print("The Name is :",Name,"and the Age is :",Age)
+print(f"the Name of the candidate is : {Name} and The person age is : {Age}")
+print("The Name is :",Name,"and the Age is :",Age,sep=' & ')
+
+Brand = 'Maruthi'
+Model = 2012
+print(f'The brand name of car is : {Brand} and the model is {Model}')
+print(Brand,Model)
+
+print("*"*50)
+
+source_cnt = 10
+target_cnt = 20
+print("source count is : ",source_cnt, "target count is : ",target_cnt, "and difference is :", source_cnt + target_cnt)
+print("source count is : ",source_cnt, "target count is : ",target_cnt, "and difference is :", source_cnt - target_cnt)
+print(f"source count is {source_cnt} and target count is {target_cnt} and difference is {source_cnt - target_cnt}")
+
+print(source_cnt, target_cnt, sep='-', end='\t')
+print(source_cnt, target_cnt,sep='-')
+print(source_cnt, target_cnt,end='\t')
+print(source_cnt, target_cnt,end='\n')
+print(source_cnt, target_cnt,sep='\n')
+print("Execution is completed!!!")
+print("hello world")
+
+
+
+
 
 
