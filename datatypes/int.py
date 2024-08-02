@@ -1,8 +1,6 @@
-# """This module file is create to practice python integer datatypes
-# created by Prashant on 04/22/2024
-#
-# Added new line of code to handle float type
-# updated by Prashant on 04/23/2024 """
+"""This module file is create to practice python integer datatypes created by Prashant on 04/22/2024 """
+
+"""Added new line of code to handle float type updated by Prashant on 04/23/2024 """
 
 count = 10
 
@@ -83,3 +81,58 @@ print(f"add two numbers {count5} and {count} number is", count6.__add__(count))
 
 a= 16000
 print("bit_cunt",a.bit_count())
+
+count_1 = 10
+print("the value of count_1 is :",count_1)
+print("Type of count_1 is", type(count_1))
+print("Memory address of count_1 is", id(count_1))
+
+count_2 = 10
+print("the value of count_2 is :",count_2)
+print("Type of count_2 is", type(count_2))
+print("Memory address of count_2 is", id(count_2))
+
+count_3 = 15
+print("the value of count_3 is :",count_3)
+print("Type of count_3 is", type(count_3))
+print("Memory address of count_3 is", id(count_3))
+
+count_4 = 15
+print("the value of count_4 is :",count_4)
+print("Type of count_4 is", type(count_4))
+print("Memory address of count_4 is", id(count_4))
+
+count_5 = -15
+print("the value of count_5 is :",count_5)
+print("Type of count_5 is", type(count_5))
+print("Memory address of count_5 is", id(count_5))
+
+count_6 = -15
+print("the value of count_6 is :",count_6)
+print("Type of count_6 is", type(count_6))
+print("Memory address of count_6 is", id(count_6))
+
+count_6 = -15
+print("the value of count_6 is :",count_6)
+print("Type of count_6 is", type(count_6))
+print("Memory address of count_6 is", id(count_6))
+
+print("Methods available in python int", dir(count))
+
+print("The absolute number of -15 if :",count_6.__abs__())
+print("the positive number of count_5 is :",count_5.__abs__())
+print("addition of count_5 and count_6 :",count_5.__add__(count_6))
+
+print("*"*50)
+
+a= 16000
+print("bit_count",a.bit_count())
+
+b = 10
+print("bit_count",b.bit_count())
+
+c = 120000
+print("bit_count",c.bit_count())
+
+
+

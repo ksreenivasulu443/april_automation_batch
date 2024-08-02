@@ -14,6 +14,7 @@ name = 'ETL'  # here name is variable_name and ETL is variable value
 # name@ = 30
 # name! = 40
 # name first = 1
+# source count = 10
 
 _name = "prashant"
 
@@ -28,6 +29,12 @@ print("source_count :",source_count)
 
 true = 10
 print(true)
+
+MAX_VALUE = 100
+print(MAX_VALUE)
+
+PI = 3.142
+print(PI)
 
 
 
