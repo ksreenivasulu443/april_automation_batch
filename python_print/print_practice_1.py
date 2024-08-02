@@ -1,3 +1,5 @@
+import sys
+
 print("hello world!")
 
 print("hello world!", "Well_come to ETL Automation")
@@ -135,3 +137,21 @@ print("Execution is completed!!!")
 print("hello world")
 print("hello world!")
 
+print("*"*50)
+
+
+file = open(r"C:\Users\om\PycharmProjects\april_automation_batch\text.text",'a')
+original = sys.stdout
+sys.stdout = file
+
+print(source_cnt, target_cnt, sep=' * ', end='\t', file=file)
+print("Execution is completed!!!")
+
+print(source_cnt, target_cnt, sep=' * ', end='\n',file=file)
+print("Execution is completed!!!")
+
+print("Prashant Chajagouda")
+
+print("*"*50)
+
+print("Hello World!!!")

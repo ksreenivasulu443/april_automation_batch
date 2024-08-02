@@ -1,6 +1,8 @@
 """ This file is created to practice identifier function
     created by: Prashant on 04/19/2024"""
 
+import keyword
+
 a = 10  # here a is variable_name and 10 variable value
 b = 20  # here b is variable_name and 20 variable value
 
@@ -17,10 +19,15 @@ _name = "prashant"
 
 Source_count = 50
 source_count = 60
+
 print("Source_count :",Source_count)
+
 print("source_count :",source_count)
 
-# print("source_count :",source_count)
+print("source_count :",source_count)
+
+true = 10
+print(true)
 
 
 
