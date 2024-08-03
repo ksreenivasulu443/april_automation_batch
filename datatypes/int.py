@@ -2,137 +2,180 @@
 
 """Added new line of code to handle float type updated by Prashant on 04/23/2024 """
 
-count = 10
+# count = 10
+#
+# print("The value of count is", count)
+# print("Type of count is", type(count))
+# print("Memory address of count is", id(count))
+#
+# count = 12
+#
+# print("The value of count is", count)
+# print("Type of count is", type(count))
+# print("Memory address of count is", id(count))
+#
+# count2 = 10
+#
+# print("The value of count2 is", count2)
+# print("Type of count2 is", type(count2))
+# print("Memory address of count2 is", id(count2))
+#
+# count3 = 15
+#
+# print("The value of count3 is", count3)
+# print("Type of count3 is", type(count3))
+# print("Memory address of count3 is", id(count3))
+#
+#
+# count4 = 10
+#
+# print("The value of count4 is", count4)
+# print("Type of count4 is", type(count4))
+# print("Memory address of count4 is", id(count4))
+#
+# count5 = 15
+#
+# print("The value of count5 is", count5)
+# print("Type of count5 is", type(count5))
+# print("Memory address of count5 is", id(count5))
+#
+# count6 = -15
+#
+# print("The value of count6 is", count6)
+# print("Type of count6 is", type(count6))
+# print("Memory address of count6 is", id(count6))
+#
+# count7 = -15
+#
+# print("The value of count7 is", count7)
+# print("Type of count7 is", type(count7))
+# print("Memory address of count7 is", id(count7))
+#
+# count7 = -15
+#
+# print("The value of count7 is", count7)
+# print("Type of count7 is", type(count7))
+# print("Memory address of count7 is", id(count7))
+#
+# count8 = -15
+#
+# print("The value of count8 is", count8)
+# print("Type of count8 is", type(count8))
+# print("Memory address of count8 is", id(count8))
+#
+# count8 = '-11'
+# print("The value of count8 is", count8)
+# print("Type of count8 is", type(count8))
+# print("Memory address of count8 is", id(count8))
+#
+# count9 = "25"
+# print("The value of count8 is", count9)
+# print("Type of count8 is", type(count9))
+# print("Memory address of count8 is", id(count9))
+#
+# print("Methods available in python int", dir(count))
+#
+# print("absolute number of -15 is ", count7.__abs__())
+# print(f"add two numbers {count5} and {count} number is", count6.__add__(count))
+#
+#
+# a= 16000
+# print("bit_cunt",a.bit_count())
+#
+# count_1 = 10
+# print("the value of count_1 is :",count_1)
+# print("Type of count_1 is", type(count_1))
+# print("Memory address of count_1 is", id(count_1))
+#
+# count_2 = 10
+# print("the value of count_2 is :",count_2)
+# print("Type of count_2 is", type(count_2))
+# print("Memory address of count_2 is", id(count_2))
+#
+# count_3 = 15
+# print("the value of count_3 is :",count_3)
+# print("Type of count_3 is", type(count_3))
+# print("Memory address of count_3 is", id(count_3))
+#
+# count_4 = 15
+# print("the value of count_4 is :",count_4)
+# print("Type of count_4 is", type(count_4))
+# print("Memory address of count_4 is", id(count_4))
+#
+# count_5 = -15
+# print("the value of count_5 is :",count_5)
+# print("Type of count_5 is", type(count_5))
+# print("Memory address of count_5 is", id(count_5))
+#
+# count_6 = -15
+# print("the value of count_6 is :",count_6)
+# print("Type of count_6 is", type(count_6))
+# print("Memory address of count_6 is", id(count_6))
+#
+# count_6 = -15
+# print("the value of count_6 is :",count_6)
+# print("Type of count_6 is", type(count_6))
+# print("Memory address of count_6 is", id(count_6))
+#
+# print("Methods available in python int", dir(count))
+#
+# print("The absolute number of -15 if :",count_6.__abs__())
+# print("the positive number of count_5 is :",count_5.__abs__())
+# print("addition of count_5 and count_6 :",count_5.__add__(count_6))
+#
+# print("*"*50)
+#
+# a= 16000
+# print("bit_count",a.bit_count())
+#
+# b = 10
+# print("bit_count",b.bit_count())
+#
+# c = 120000
+# print("bit_count",c.bit_count())
 
-print("The value of count is", count)
-print("Type of count is", type(count))
-print("Memory address of count is", id(count))
+print("*" * 50)
 
-count = 12
+source_count_1 = 100
+source_count_2 = 100
+source_count_3 = -101
+source_count_4 = -101
+source_count_5 = 102
+source_count_6 = 102
+source_count_7 = 103
+source_count_8 = 103
 
-print("The value of count is", count)
-print("Type of count is", type(count))
-print("Memory address of count is", id(count))
+# source_count_1 = 100
+# print("The value of the source_count_1 is :", source_count_1)
+# print("The type of the source_count_1 is :", type(source_count_1))
+# print("The memory location of the source_count_1 is :", id(source_count_1))
+#
+# source_count_2 = 100
+# print("The value of the source_count_2 is :", source_count_2)
+# print("The type of the source_count_2 is :", type(source_count_2))
+# print("The memory location of the source_count_2 is :", id(source_count_2))
+#
+# source_count_1 = '100'
+# print("The value of the source_count_1 is :", source_count_1)
+# print("The type of the source_count_1 is :", type(source_count_1))
+# print("The memory location of the source_count_1 is :", id(source_count_1))
+#
+# source_count_1 = 100.5
+# print("The value of the source_count_1 is :", source_count_1)
+# print("The type of the source_count_1 is :", type(source_count_1))
+# print("The memory location of the source_count_1 is :", id(source_count_1))
 
-count2 = 10
+source_count_3 = -101
+source_count_4 = -101
+print("The value of the source_count_1 is :", source_count_3)
+print("The type of the source_count_1 is :", type(source_count_3))
+print("The memory location of the source_count_1 is :", id(source_count_3))
 
-print("The value of count2 is", count2)
-print("Type of count2 is", type(count2))
-print("Memory address of count2 is", id(count2))
+source_count_4
+print("The value of the source_count_1 is :", source_count_4)
+print("The type of the source_count_1 is :", type(source_count_4))
+print("The memory location of the source_count_1 is :", id(source_count_4))
 
-count3 = 15
-
-print("The value of count3 is", count3)
-print("Type of count3 is", type(count3))
-print("Memory address of count3 is", id(count3))
-
-
-count4 = 10
-
-print("The value of count4 is", count4)
-print("Type of count4 is", type(count4))
-print("Memory address of count4 is", id(count4))
-
-count5 = 15
-
-print("The value of count5 is", count5)
-print("Type of count5 is", type(count5))
-print("Memory address of count5 is", id(count5))
-
-count6 = -15
-
-print("The value of count6 is", count6)
-print("Type of count6 is", type(count6))
-print("Memory address of count6 is", id(count6))
-
-count7 = -15
-
-print("The value of count7 is", count7)
-print("Type of count7 is", type(count7))
-print("Memory address of count7 is", id(count7))
-
-count7 = -15
-
-print("The value of count7 is", count7)
-print("Type of count7 is", type(count7))
-print("Memory address of count7 is", id(count7))
-
-count8 = -15
-
-print("The value of count8 is", count8)
-print("Type of count8 is", type(count8))
-print("Memory address of count8 is", id(count8))
-
-count8 = '-11'
-print("The value of count8 is", count8)
-print("Type of count8 is", type(count8))
-print("Memory address of count8 is", id(count8))
-
-count9 = "25"
-print("The value of count8 is", count9)
-print("Type of count8 is", type(count9))
-print("Memory address of count8 is", id(count9))
-
-print("Methods available in python int", dir(count))
-
-print("absolute number of -15 is ", count7.__abs__())
-print(f"add two numbers {count5} and {count} number is", count6.__add__(count))
-
-
-a= 16000
-print("bit_cunt",a.bit_count())
-
-count_1 = 10
-print("the value of count_1 is :",count_1)
-print("Type of count_1 is", type(count_1))
-print("Memory address of count_1 is", id(count_1))
-
-count_2 = 10
-print("the value of count_2 is :",count_2)
-print("Type of count_2 is", type(count_2))
-print("Memory address of count_2 is", id(count_2))
-
-count_3 = 15
-print("the value of count_3 is :",count_3)
-print("Type of count_3 is", type(count_3))
-print("Memory address of count_3 is", id(count_3))
-
-count_4 = 15
-print("the value of count_4 is :",count_4)
-print("Type of count_4 is", type(count_4))
-print("Memory address of count_4 is", id(count_4))
-
-count_5 = -15
-print("the value of count_5 is :",count_5)
-print("Type of count_5 is", type(count_5))
-print("Memory address of count_5 is", id(count_5))
-
-count_6 = -15
-print("the value of count_6 is :",count_6)
-print("Type of count_6 is", type(count_6))
-print("Memory address of count_6 is", id(count_6))
-
-count_6 = -15
-print("the value of count_6 is :",count_6)
-print("Type of count_6 is", type(count_6))
-print("Memory address of count_6 is", id(count_6))
-
-print("Methods available in python int", dir(count))
-
-print("The absolute number of -15 if :",count_6.__abs__())
-print("the positive number of count_5 is :",count_5.__abs__())
-print("addition of count_5 and count_6 :",count_5.__add__(count_6))
-
-print("*"*50)
-
-a= 16000
-print("bit_count",a.bit_count())
-
-b = 10
-print("bit_count",b.bit_count())
-
-c = 120000
-print("bit_count",c.bit_count())
 
 
 

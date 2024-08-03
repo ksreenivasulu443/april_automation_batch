@@ -16,6 +16,7 @@ name = 'ETL'  # here name is variable_name and ETL is variable value
 # name first = 1
 # source count = 10
 
+Print = 600
 _name = "prashant"
 
 Source_count = 50
