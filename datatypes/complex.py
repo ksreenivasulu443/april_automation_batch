@@ -43,3 +43,19 @@ c_4 = 1 + 2j
 print("functions available in float type", dir(c_4))
 print("Imaginary value of c_4 is :", c_4.imag)
 print("Real value of c_4 is :", c_4.real)
+
+c_5 = 3j
+print("functions available in float type", dir(c_5))
+print("Imaginary value of c_5 is :", c_5.imag)
+print("Real value of c_5 is :", c_5.real)
+
+c_6 = 0.1+3j
+print("functions available in float type", dir(c_5))
+print(f"Imaginary value of {c_6} is :", c_6.imag)
+print(f"Real value of {c_6} is :", c_6.real)
+
+
+
+
+
+
