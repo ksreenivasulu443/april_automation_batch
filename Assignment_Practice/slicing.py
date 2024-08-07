@@ -125,6 +125,7 @@ print("str2[3:-2:1]", str2[::1])
 print("str2[3:-2:1]", str2[1::1])
 print("str2[3:-2:1]", str2[1::-1])
 print("str2[3:-2:1]", str2[-1::1])
+print("str2[3:-2:1]", str2[::-1])
 
 
 
