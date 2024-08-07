@@ -74,13 +74,57 @@ print("=" * 100)
 # print(f"{str_3} is : ",str_3[0:18:2])
 # print(f"{str_3} is : ",str_3[0:18:3])
 
-print("*"*60)
+print("*" * 60)
 
 str_4 = 'prashant91@gmail.com'
 print(f"print the usr name from {str_4} is :", str_4[0:str_4.find('@')])
 print(f"print the usr name from {str_4} is :", str_4[str_4.find('@'):])
-print(f"print the usr name from {str_4} is :", str_4[str_4.find('@')+1:])
+print(f"print the usr name from {str_4} is :", str_4[str_4.find('@') + 1:])
 
+print("-" * 60)
+
+# Negative index
+# ---------------
+
+str1 = 'ETL'
+print("str")
+
+print(f"last character available in the {str1} is :", str1[-1])
+print(f"second character available in the {str1} is :", str1[-2])
+print(f"first character available in the {str1} is :", str1[-3])
+
+print("*" * 50)
+
+print(f"first character available in the {str1} is :", str1[0])
+print(f"second character available in the {str1} is :", str1[1])
+print(f"first character available in the {str1} is :", str1[2])
+
+print("*" * 50)
+
+str2 = 'ETL Automation'
+print("str2[12:-7:1]", str2[-12:-7:1])
+print("str2[-12:-7:-1]", str2[-12:-7:-1])
+print("str2[-12:-13:-1]", str2[-12:-13:-1])
+print("str2[-12:-14:-1]", str2[-12:-14:-1])
+print("str2[-12:-14:1]", str2[-12:-14:1])
+print("str2[-14:-12:1]", str2[-14:-12:1])
+print("str2[-12:-7:1]", str2[-12:-7:1])
+print("str2[0:100:1]", str2[0:100:1])
+# print("str2[100]", str2[100]) # IndexError: string index out of range
+
+print("str2[-12:-2:2]", str2[-12:-2:2])
+print("str2[3:-2:1]", str2[3:-2:1])
+print("str2[3:-2:1]", str2[3:2:-1])
+print("str2[3:-2:1]", str2[3:-2:1])
+print("str2[3:-2:1]", str2[3:5:-1])
+print("str2[3:-2:1]", str2[-1:5:-1])
+
+print("str2[3:-2:1]", str2[::])
+print("str2[3:-2:1]", str2[::-1])
+print("str2[3:-2:1]", str2[::1])
+print("str2[3:-2:1]", str2[1::1])
+print("str2[3:-2:1]", str2[1::-1])
+print("str2[3:-2:1]", str2[-1::1])
 
 
 
