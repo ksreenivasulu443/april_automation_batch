@@ -46,7 +46,8 @@ print("keys available in dict", d.keys())
 print("values available in dict", d.values())
 
 d = {1: 'sreeni', 2: "hari", 3: "ramesh"}
-d.pop(3)
+# d.pop(3)
 print("d values after pop ", d)
-d.popitem()
+# d.popitem()
 print("d values after popitem ", d)
+print(d)
