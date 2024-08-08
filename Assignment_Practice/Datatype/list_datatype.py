@@ -43,7 +43,7 @@ print("the type of the list2 is :", type(ls2))
 print("the memory address of the list2 is :", id(ls2))
 
 print("the methods available in the list is :", dir(ls2))
-"""'append', 'clear', 'copy', 'count', 'extend', 'index', 
+"""'append', 'clear', 'copy', 'count', 'extend', 'index',
    'insert', 'pop', 'remove', 'reverse', 'sort'"""
 
 print("before append the list2 value is :", ls2)
@@ -115,3 +115,28 @@ print("before reverse the ls6:", ls6)
 ls6.reverse()
 print("after reverse the ls6:", ls6)
 print("ls6[3][::-1] : ", ls6[3][::-1])
+
+ls_1 = [1, 2, 3]
+ls_2 = [3, 4, 5]
+print("list addition ls, ls_1", ls_1 + ls_2)
+print("list multiplication ls_2", ls_1 * 2)
+
+f_name = 'Prashant'
+l_name = 'Nivi'
+print("f_name + l_name :", f_name + l_name)
+# print("f_name * l_name :",f_name * l_name)
+print("f_name + l_name :", f_name * 2)
+
+a = 10
+b = 20
+print("a + b :", a + b)
+print("a * b :", a * b)
+
+t = (1, 2, 3)
+ls_1 = [1, 2, 3]
+print("before convert", type(ls_1))
+print("before convert", type(t))
+ls_1 = tuple(ls_1)
+print("after convert to tuple", type(ls_1))
+t = list(t)
+print("after convert to list", type(t))

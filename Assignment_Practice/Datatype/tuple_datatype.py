@@ -1,3 +1,5 @@
+import sys
+
 tuple1 = (1, 2.0, True, 1 + 2j, 'string')
 print("print the given tuple :", tuple1)
 
@@ -38,12 +40,18 @@ print("tuple1[0::]:", tuple1[0:3])
 print("methods available in the tuple are :", dir(tuple))
 """'count', 'index'"""
 
-print("-"*70)
+print("-" * 70)
 
-tuple1 = (1, 2.0, True, 1 + 2j, 'string',2.0,'string',1,1)
+tuple1 = (1, 2.0, True, 1 + 2j, 'string', 2.0, 'string', 1, 1)
 print("print the index of the given tuple1.index(2.0):", tuple1.index(2.0))
 print("print the count of the given tuple1.count(2.0):", tuple1.count(2.0))
 print("print the count of the given tuple1.count(1):", tuple1.count(1))
 print("print the count of the given tuple1.count(2):", tuple1.count(2))
-print("print the count of the given tuple1.count(1+2j):", tuple1.count(1+2j))
+print("print the count of the given tuple1.count(1+2j):", tuple1.count(1 + 2j))
 print("print the count of the given tuple1.count('string'):", tuple1.count('string'))
+
+list1 = [1, 2, 3, 4, 5]
+tuple1 = (1, 2, 3, 4, 5)
+
+print("the size of the list1", sys.getsizeof(list1))
+print("the size of the tuple1", sys.getsizeof(tuple1))
