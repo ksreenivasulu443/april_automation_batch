@@ -135,7 +135,7 @@ if number > 0:
 elif number == 0:
     print("the number is equal to zero")
 else:
-    print("The given number is negtive")
+    print("The given number is negative")
 
 
 number = float(input("Enter number:"))
