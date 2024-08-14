@@ -169,17 +169,6 @@ else:
 # print if marks between 40 and 50 Grdae D
 # else: failed
 
-marks = float(input("Scored marks:"))
-if marks >= 70:
-    print("Scored grade A")
-elif marks >= 60 and marks < 70:
-    print("Scored grade B")
-elif marks >= 50 and marks < 60:
-    print("Scored grade C")
-elif marks >= 40 and marks < 50:
-    print("Scored grade D")
-else:
-    print("failed")
 
 marks = float(input("Scored marks:"))
 if marks >= 70:
