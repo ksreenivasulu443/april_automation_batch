@@ -275,10 +275,10 @@
 # print("Before lower the str3 is:",str3)
 # print("after lower the str3 is:",str3.lower())
 #
-# # title
-# str4 = 'ETL Automation'
-# print("Before title the str4 is:",str4)
-# print("after title  the str4 is:",str4.title())
+# title
+str4 = 'ETL Automation'
+print("Before title the str4 is:",str4)
+print("after title  the str4 is:",str4.title())
 #
 # # swapcase
 # str5 = 'ETL Automation'

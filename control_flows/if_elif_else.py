@@ -282,3 +282,7 @@ if num == num1:
     print("1bb1 is palindrome")
 else:
     print("1bb1 is not palindrome")
+
+number = 7019679563
+num = str(number)
+print("reverse the phone_number :",num[::-1])

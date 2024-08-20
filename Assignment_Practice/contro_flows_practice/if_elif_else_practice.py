@@ -304,39 +304,62 @@ import condition
 # print("first three later from the given variable {Name} is :", Name[0:3])
 
 
-state1 = 'belagavi'
-rev_sta1 = state1[::-1]
-if state1 == rev_sta1:
-    print("belagavi is palindrome")
-else:
-    print("belagavi is not a palindrome")
-
-num1 = '1bb1'
-print("the value of 1bb1 is", num1)
-print("the type of 1bb1 is", type(num1))
-print("the id of 1bb1 is", id(num1))
-num = num1[::-1]
-if num == num1:
-    print("1bb1 is palindrome")
-else:
-    print("1bb1 is not palindrome")
-
-print("-" * 50)
+# state1 = 'belagavi'
+# rev_sta1 = state1[::-1]
+# if state1 == rev_sta1:
+#     print("belagavi is palindrome")
+# else:
+#     print("belagavi is not a palindrome")
+#
+# num1 = '1bb1'
+# print("the value of 1bb1 is", num1)
+# print("the type of 1bb1 is", type(num1))
+# print("the id of 1bb1 is", id(num1))
+# num = num1[::-1]
+# if num == num1:
+#     print("1bb1 is palindrome")
+# else:
+#     print("1bb1 is not palindrome")
+#
+# print("-" * 50)
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-source_count = 10
-target_count = 11
-if source_count == target_count:
-    print("The count is matching")
-else:
-    print("The count is not matching the deference is :",source_count - target_count)
+# source_count = 10
+# target_count = 11
+# if source_count == target_count:
+#     print("The count is matching")
+# else:
+#     print("The count is not matching the deference is :",source_count - target_count)
+#
+# source_count = 10
+# target_count = 11
+# if source_count == target_count:
+#     print("The count is matching")
+# else:
+#     print("The count is not matching the deference is :", abs(source_count - target_count))
 
-source_count = 10
-target_count = 11
-if source_count == target_count:
-    print("The count is matching")
-else:
-    print("The count is not matching the deference is :", abs(source_count - target_count))
-
-print("-" * 50)
+# print("-" * 50)
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+# number_1 = 1
+# print(f"the value of {number_1} is :",number_1)
+# if number_1 > 0:
+#     print("positive number")
+#
+# number_2 = -1
+# if number_2 > -2:
+#     print("negative number")
+
+# num = int(input("enter the number :"))
+# print(f"the value of {num} is :",num)
+# if num >= 0:
+#     print("positive number")
+# else:
+#     print("negative number")
+
+name = "Prashant"
+print("reverse name of prashant :", name[::-1])
+
+number = 7019679563
+num = str(number)
+print("reverse the phone_number :", num[::-1])
